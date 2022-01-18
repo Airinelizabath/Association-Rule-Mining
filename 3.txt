@@ -1,0 +1,641 @@
+Mechanical Vibrations
+
+Damping treatment of beam with unconstrained/constrained 1-3 smart
+viscoelastic composite layer
+Abhay Gupta, Rajidi Shashidhar Reddy, Satyajit Panda, Nitin Kumar ⇑
+Department of Mechanical Engineering, Indian Institute of Technology Guwahati, Guwahati 781039, India
+article info
+Article history:
+Received 27 December 2019
+Accepted 6 January 2020
+Available online xxxx
+Keywords:
+Viscoelastic materials and composites
+Piezoelectric materials
+Finite element method
+Free/ unconstrained layer damping
+treatment
+Constrained layer damping treatment
+abstract
+A design of 1-3 smart viscoelastic composite (SVC) is proposed for the augmentation of unconstrained/
+constrained layer damping treatment of beam. The 1-3 SVC is designed by inserting the active
+piezoelectric patches in monolithic viscoelastic material (VEM) layer. The optimal geometrical properties
+of the 1-3 SVC layer are decided to maximize the modal loss factor using an exhaustive search method.
+The modal loss factor and its extensional and shear counterparts of the beam with 1-3 SVC layer increases
+as compared to the monolithic VEM layer. The results states that 1-3 SVC layer may be potential damping
+layer in the damping treatment.
+ 2020 Elsevier Ltd. All rights reserved.
+Selection and of the scientific committee of the 10th International Conference of Materials Processing and
+Characterization.
+1. Introduction
+Viscoelastic material (VEM) consists of both viscous and elastic
+properties and generally used to dissipate energy in structural
+vibration. These viscoelastic materials are used in the form of a
+layer that is freely attached to the surface of the host structure
+named as unconstrained layer damping (UCLD) treatment or constrained between the surface of the host structure and constraining
+layer named as constrained layer damping (CLD) treatment. In
+UCLD treatment, energy dissipation occurs due to in-plane extension and compression strain/deformation whereas in CLD treatment, energy dissipation is due to transverse shear strain/
+deformation. CLD treatment is also called a passive constrained
+layer damping (PCLD) treatment when the constraining layer is a
+passive layer. These damping treatments are generally used in
+automobiles, aerospace, marine application to reduce the vibration. The UCLD treatment was firstly proposed by Oberst and
+Frankenfeld [1]. Later, Ungar and Kerwin [2] analysed the dissipated energy from a plate integrated with the viscoelastic layer.
+It has been observed that damping increases through the optimal
+distribution of viscoelastic material over the structure as compared
+to fully treated UCLD treatment [3,4]. However, damping due to
+UCLD treatment is less as compared to CLD treatment [5]. CLD/
+PCLD treatment was first introduced in British patent [6]. Kerwin
+[7] studied the effect of CLD treatment in structural vibration. Alam
+and Asnani [8] observed that damping could be improved using
+multiple CLD layers. Whittier [9] introduce the standoff/spacer
+layer in between the host structure and damping layer and
+observed that damping increase due to an increase in shear deformation of the overall structure. Marcelin et al. [10] proposed the
+partial treatment of structure and observed that the optimum size
+and location of partial CLD segments can improve damping compared to fully CLD treatment.
+Recently, Kumar et al. [11] proposed the design of 1-3 viscoelastic composite (VEC) and utilized it as the damping layer in the
+enhancement of UCLD/CLD treatment of the structure. In this
+design of 1-3 VEC, the graphite wafers are inserted within the
+monolithic VEM layer so in-plane and transverse shear strains in
+VEM improves the damping of overall structure. If active piezoelectric patches are used in the place of graphite wafers within the
+monolithic VEM layer, the damping may be improved due to the
+further enhancement of in-plane extension and transverse shear
+strain through the extension actuation of active piezoelectric
+patches. Hence, in the present work a design of 1-3 smart viscoelastic composite (SVC) layer is proposed for the augmentation
+of UCLD/CLD treatment in the structural vibration. The present
+1-3 SVC layer is designed as shown in Fig. 1(a). And, to investigate
+the aforesaid effect of present 1-3 SVC layer, first, the optimal geometrical properties of 1-3 SVC layer for UCLD/CLD treatment of
+beam are decided based on modal loss factor (1) at different
+control-gains (kd). The extension (ge) and shear (gs) counterpart
+https://doi.org/10.1016/j.matpr.2020.01.154
+2214-7853/ 2020 Elsevier Ltd. All rights reserved.
+Selection and of the scientific committee of the 10th International Conference of Materials Processing and Characterization.
+⇑ Corresponding author.
+E-mail address: nitin18@iitg.ac.in (N. Kumar).
+Materials Today: Proceedings xxx (xxxx) xxx
+Contents lists available at ScienceDirect
+Materials Today: Proceedings
+journal homepage: www.elsevier.com/locate/matpr
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+corresponding to modal loss factor (g) are also examined and compared the similar results of UCLD/CLD treatment of beam with constrained monolithic VEM layer. The frequency responses and
+corresponding variation of the control voltage is also studied to
+investigate the damping performance of present 1-3 SVC layer as
+compared to the monolithic VEM layer in UCLD/CLD treatment of
+beam.
+2. Finite element formulation of the overall beam
+The schematic diagram of the overall beam is shown in Fig. 1(b)
+and (c) where the bottom surface of the beam is considered as the
+reference plane and the origin (o) of the reference Cartesian coordinate system (xyz) is located at one edge of this reference plane.
+The length, width and thickness of the substrate beam are denoted
+by L, b and h respectively. In the case of UCLD treatment, the thickness of the unconstrained 1-3 SVC layer is denoted by hd while in
+CLD treatment the thickness of constrained 1-3 SVC and passive
+constraining layer are denoted as hd and hc respectively. The thickness of VEM layers, the gap between the active piezoelectric
+patches and the number of patches within 1-3 SVC layer are symbolized by hv , Dp and np, respectively (Fig. 1(a)). The edges of the
+overall beam are considered as fixed ends while it (beam) is subjected to a transverse point load (p0). The FE model of the overall
+beam is derived according to the plane stress assumption [12] in
+the y-direction and considering a typical xz-plane as shown in
+Fig. 1(b) and (c). Accordingly, the state of strain (e) and the state
+of stress (r) at any point within thexz-plane can be written as,
+e ¼ ex ez c f g xz
+T
+; r ¼ f g rx rz sxz
+T ð1Þ
+where, ex=rx and ez=rzare the normal strain/stress along the x and z
+directions, respectively; cxz=sxz is the shear strain/stress in the
+xz-plane. The linear strain–displacement relations at any point
+can be expressed as,
+e ¼ Ld; d ¼ f g u w T
+; L ¼ @=@x 0 @=@z
+0 @=@z @=@x
+ T
+ð2Þ
+where,u and w are the displacements at any point within the overall
+beam along x and z directions, respectively; d is the displacement
+vector. The constitutive relation for the isotropic layer can be written as,
+rk ¼ Ck
+e; where Ck ¼ Ek
+1  mk ð Þ2
+1 mk 0
+mk 1 0
+00 1  mk  =2
+2
+6
+4
+3
+7
+5 ð3aÞ
+Although, active piezoelectric patches are used within 1-3 SVC.
+These piezoelectric patches are activated by applying the constant
+electric field (Ez ¼ V=hp) across the thickness of patches. Therefore, the constitutive relation for the piezoelectric patches can be
+expressed as,
+rk ¼ Ck
+e  ek
+Ez; Dk
+z ¼ ek  T
+e þ 2k
+Ez ;
+where Ck ¼
+C
+k
+11 C
+k
+13 0
+C
+k
+13 C
+k
+33 0
+0 0 C
+k
+55
+2
+6
+6
+6
+6
+4
+3
+7
+7
+7
+7
+5
+and ; ek ¼
+e
+k
+31
+e
+k
+33
+0
+8
+>><
+>>:
+9
+>>=
+>>;
+;
+Ck
+11
+
+¼ Ck
+11  Ck
+12  2
+=Ck
+22; Ck
+13
+
+¼ Ck
+13  Ck
+12Ck
+23  =Ck
+22; Ck
+33
+
+¼ Ck
+33  Ck
+23  2
+=Ck
+22;
+Fig. 1. Schematic diagrams of (a) 1-3 SVC layer; (b) beam with unconstrained 1-3 SVC layer; (c) beam with constrained 1-3 SVC layer.
+2 A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+Ck
+55
+
+¼ Ck
+55; ek
+31 ¼ ek
+31  ek
+32Ck
+12  =Ck
+22; e
+k
+33
+¼ ek
+33  ek
+32Ck
+23  =Ck
+22 ð3cÞ
+In order to derive the FE model of the overall beam, the xz-plane
+(Fig. 1(b)) is discretized by nine-node isoparametric elements. The
+displacement vector (d) at a point within a typical element can be
+expressed by the elemental nodal displacement vector (de
+) and the
+shape function matrix (N) as,
+d ¼ N de ð4Þ
+For the vibration of the overall beam under an applied load (p0)
+at its middle point of the bottom surface (x ¼ L=2,z ¼ 0), the first
+variations of its total potential energy ð Þ dTP and total kinetic
+energy ð Þ dTK can be written as,
+dTP ¼ X3
+k¼1
+Z
+Ak
+ð Þ de T
+rk  ð Þ dEz Dk
+z
+D EdAk
+2
+6
+4
+3
+7
+5  ð Þ dw p0 h ix¼L=2;z¼h ð5aÞ
+dTK ¼ X3
+k¼1
+Z
+Ak
+f g du_ dw_ qk
+f g u_ w_ T  dAk
+2
+6
+4
+3
+7
+5 ð5bÞ
+where,d is the operator for first variation; qk is the mass density of
+k
+th material within the overall beam; Ak is the area of k
+th material in
+the xz-plane (Fig. 1(b)).
+The governing equations of motion of the overall beam are
+derived by employing extended Hamilton’s principle as given in
+Eq. (6). Using Eqs. (3) and (4) in Eqs. (5a) and (5b), and substituting
+the resulting equations in Eq. (6), the elemental FE equations of
+motion can be obtained as given in Eq. (7).
+Zt2
+t1
+ð Þ dTK  dTP dt ¼ 0 ð6Þ
+Me€
+d
+e
+þ Ke
+ð Þ x de ¼ Pe
+E V þ Pe
+0
+Me ¼
+Z
+Ae
+k
+NT
+qk
+N
+  dAe
+k; Ke ¼
+Z
+Ae
+k
+NT
+L
+T
+Ck
+LN   dAe
+k
+Pe
+0 ¼ f g 0 1 T
+p0
+ 
+x¼L=2;z¼h
+; PE
+e ¼
+Z
+Ae
+k
+NT
+LT
+ek
+  dAe
+k ð7Þ
+In Eq. (7), Me
+, Ke
+, Pe
+0 , Pe
+E are the elemental mass matrix, stiffness
+matrix, mechanical load vector and electro-elastic coefficient vector respectively; Ae
+k is the area of an element in the k
+th material.
+Assembling the elemental equations (Eq. (7)), the global equation
+of motion of the overall beam can be expressed as,
+M€
+d þ K d ¼ Xnp
+s¼1
+Ps
+EV þ P0; K ¼ Kb þ Ks ð8Þ
+where, M is the global mass matrix; K is global stiffness matrix , Kb
+and Ks are its bending and transverse shear counterparts; Ps
+E is the
+global electro-elastic coefficient vector and V ¼ kdw_ ð Þs is applied
+voltage for the sth patch; P0 is the global mechanical load coefficient
+vector; d is the global displacement vector. A closed loop negative
+velocity feedback control strategy is used and the expression of
+the voltage applied to sth patch is given in Eq. (9). The velocity of
+corresponding sensor (w_ s) can be expressed in terms of _
+d through
+a transformation row matrix (NT ) according to Eq. (9), and then
+the governing equation of motion (Eq. (10)) can be expressed as
+follows,
+V ¼ kdw_ s; w_ s ¼ NTX_ ð9Þ
+M€
+d þ C _
+d þ Kd ¼ PMp0; C ¼ Xnp
+s¼1
+Ps
+EkdNT
+  ð10Þ
+2.1. Estimation of damping in the overall beam
+For the free vibration of the overall beam (p0 ¼0), Eq. (10) can
+be expressed as complex quadratic eigenvalue problem as [13],
+KR
+b þ KR
+s
+  þ j KI
+b þ KI
+s þ xC
+D E   wi ¼ x2
+i Mwi ð11Þ
+where, superscript R and Iare the real and imaginary counterpart of
+bending and shear global stiffness matrix, wi is the complex nodal
+displacement vector of i
+th natural mode having the complex natural
+frequency of xi. This complex natural frequency can be expressed
+in terms of the natural frequency (xo
+i ) of the overall beam and
+the modal loss factor (gi
+) as follows [14],
+ð Þ xi
+2 ¼ xo
+i
+ 2 1 þ jgi h i; gi ¼ Imð Þ xi
+2
+=Reð Þ xi
+2 ð12Þ
+Now, for the assumption of, KI
+s ¼ 0 (KI
+b–0) and KI
+b ¼ 0 (KI
+s–0),
+the damping in overall beam appears due to in-plane extension/-
+compression and transverse shear strains, respectively. The corresponding extensional and shear modal loss factor is denoted by ge
+and gs, respectively. Without any assumptions (KI
+b–0,KI
+s–0), the
+modal loss factor (g) indicates total damping in the overall beam.
+In order to determine these modal loss factors (ge,gs,g), the complex quadratic eigenvalue problem (Eq. (11)) is presently solved
+using direct iteration method as follows,
+KR
+b þ KR
+s
+  þ j KI
+b þ KI
+s þ Cxprev i
+D E   wi ¼ xcurr
+i
+ 2
+Mwi ð13Þ
+In Eq. (13), the superscripts prev and curr indicate the values of
+xi corresponding to the previous and current iterations, respectively. The iteration starts with xprev i ¼ 0. In every iteration, a complex linear eigenvalue problem is solved for xcurr
+i with an assigned
+value of xprev i obtained from the previous iteration. If the value of
+xcurr
+i appears in good agreement with the value of xprev i according
+to convergence criteria, the iteration is terminated with the solution as, xcurr
+i ¼ xprev i ¼ xi.
+3. Numerical results and discussion
+In the present work, the design of 1-3 SVC layer is proposed for
+the augmentation of damping in structural vibration. The 1-3 SVC
+layer is formed by inserting active piezoelectric patches within the
+VEM layer (Fig. 1(a)). So the damping characteristics of 1-3 SVC
+layer in UCLD and CLD treatment of the beam are studied. The geometric properties of the substrate beam are considered as, length
+L ¼ 0.2 m, width b ¼4 mm and thickness h ¼5 mm. In the case of
+UCLD treatment, the thickness of the unconstrained 1-3 SVC layer
+is considered as hd ¼1 mm while in CLD treatment the thickness of
+constrained 1-3 SVC and passive constraining layer are considered
+as hd ¼1 mm and hc ¼0.5 mm respectively. The ends of the overall
+beam are considered as fixed ends (uj
+x¼0 ¼ 0; uj
+x¼L ¼ 0;
+wj
+x¼0 ¼ 0; wj
+x¼L ¼ 0). The substrate beam is made of Aluminium
+(E ¼69 GPa, m ¼0.3, q ¼2740 kg/m3
+). The active piezoelectric
+patches within VEM are made of PZT-5H (C11 ¼151 GPa, C12 ¼98
+GPa, C13 ¼96 GPa, C33 ¼124 GPa, C44 ¼24 GPa,q = 7500 kg/m3
+,
+e31 ¼5.1C/m2
+, e33 ¼27C/m2
+, e15 ¼ 17C/m2
+, 211 ¼ 15:3 
+109 C=Vm, 222 ¼ 15:1  109 C=Vm [15]) while the monolithic
+A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx 3
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+VEM phase is considered as Butyl Rubber (E ¼15(1 + 0.6i) MPa,
+m ¼0.49, q ¼920 kg/m3
+). The passive constraining layer is also
+made of Aluminium in the CLD treatment. In order to verify the
+present FE formulation, the fundamental frequency and corresponding modal loss factor of the overall beam are illustrated in
+Table 1 for UCLD and CLD treatments and compared with the similar results available in [4] and [16], respectively. It may be
+observed from Table 1 that the present results are in good agreement with the reference results in [4,16]. Similarly, for the validation of the electro-elastic coupling, the dimensionless transverse
+displacement of the overall beam is evaluated for an applied external voltage across the thickness of the piezoelectric layer and compared with the similar results available in [17]. It may be observed
+from Table 2 that the present FE results are in good agreement
+with the available results.
+3.1. UCLD treatment of beam with unconstrained 1-3 SVC layer
+In order to investigate the effect of 1-3 SVC layer, the damping
+characteristics of the beam with unconstrained 1-3 SVC layer are
+studied. Since the damping depends on the geometrical properties
+(hv ,np, Dp) of 1-3 SVC layer (Fig. 1(a)), the optimal configuration of
+the unconstrained 1-3 SVC layer is decided to maximize the modal
+loss factor (g) of the overall beam corresponding to the first bending mode of vibration. The exhaustive search method [18] is used
+to find the optimal geometrical properties (hv ,np, Dp) of 1-3 SVC
+layer. Based on a fabrication point of view, the bounds of the geometrical properties are considered as, 20 m 6 hv 6100 m,
+46 np 620, 50 m 6 Dp 6200 m. A three-dimensional contour
+shown in Fig. 2 to express the variation of modal loss factor (kd)
+with respect to the geometrical properties (hv ,np, Dp) at different
+control-gains (kd). The optimal geometrical properties of the
+unconstrained 1-3 SVC layer at different control-gains (kd) may
+be obtained from Fig. 2 with an intent to maximize the modal loss
+factor (g) of the overall beam. These optimal geometrical properties of unconstrained 1-3 SVC layer at different control-gains (kd)
+are presented in Table 3. With these optimal geometrical properties of unconstrained 1-3 SVC layer at different control-gains (kd)
+(Table 3), the fundamental frequency (xn) and corresponding
+modal loss factor (g) and it’s extensional (ge) and shear (gs) counterparts are illustrated in Table 4. The similar results for the beam
+with unconstrained monolithic VEM also evaluated (Table 4). It
+may be observed from Table 3 that the modal loss factor (g) and
+its counterparts (ge,gs) of the beam with unconstrained 1-3 SVC
+layer is greater than monolithic VEM layer. The increase in modal
+loss factor (g) is due to the combined effect of an increase in extensional (ge) and shear (gs) counterparts. This may be due to an
+enhancement of extension/compression and shear strains through
+the inserted active piezoelectric patches in VEM layer. The increment in the value of extension counterpart (ge) may be due to an
+Table 1
+Verification of the present FE model of the overall beam.
+Parameter UCLD CLD
+Present Ref. [4] Present Ref. [16]
+Fundamental frequency (xn) 2891.1 2891 739.8 740.5
+Modal loss factor (g) 0.00238 0.0024 0.004489 0.00448
+Table 2
+Verification of the present FE formulation for modelling the electro-elastic coupling in
+the piezoelectric layer.
+Normalized displacement (w=h(102
+))
+Present Reference [17]
+2.088 2.040
+Fig. 2. The contour of modal loss factor (g) in a 3-D domain of the geometric parameters (hv , np, Dp) of the beam with unconstrained 1-3 SVC layer at different velocity
+control-gains (a) kd ¼0, (b) kd ¼100, (c) kd ¼500.
+4 A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+increase in extension/compression strain of VEM between two
+consecutive active piezoelectric patches. However, the increment
+in shear counterpart (gs) is due to an increase in shear strain of
+top and bottom VEM layers. It may also be observed from the
+Table 4 that in case of beam with unconstrained 1-3 SVC layer,
+the value of modal loss factor (g) and its extensional (ge) and shear
+(gs) counterparts also increases with control-gain (kd). Thus
+enhancement in damping (modal loss factor) occurs due to both
+Table 3
+Optimal geometrical parameters (hv , np, Dp) of the beam with unconstrained 1-3 SVC
+layer at different velocity control-gains (kd).
+kd hv (lm) np Dp (lm) g
+0 20 6 50 0.0568
+100 20 6 50 0.0588
+500 50 4 50 0.0683
+Table 4
+Comparison of the fundamental frequency (xn) and corresponding modal loss factor (g) and it’s extensional (ge ) and shear (gs ) counterparts of the beam with unconstrained 1-3
+SVC layer.
+Treatments xn g ge gs
+UCLD treatment of beam with monolithic VEM (Passive) 3909.4 1.14104 1.12104 1.43106
+UCLD treatment of beam with unconstrained 1-3 SVC layer (Only passive kd ¼0) 3579.9 0.0568 0.0145 0.0429
+UCLD treatment of beam with unconstrained 1-3 SVC layer (Active-passive kd ¼100) 3578.9 0.0588 0.0164 0.0446
+UCLD treatment of beam with unconstrained 1-3 SVC layer (Active-passive kd ¼500) 3552.5 0.0683 0.0290 0.0552
+Fig. 3. (a) Frequency responses of the overall beam and; (b) corresponding variations of the control voltage (UCLD treatment, p0 ¼0.04 N).
+Fig. 4. The contour of modal loss factor (g) in a 3-D domain of the geometric parameters (hv , np, Dp) of the beam with constrained 1-3 SVC layer at different velocity controlgains (a) kd ¼0, (b) kd ¼100, (c) kd ¼500.
+A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx 5
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+active and passive control action of piezoelectric patches and VEM
+layers, respectively.
+In order to study the effectiveness of 1-3 SVC, the frequency
+responses of the beam with unconstrained 1-3 SVC layer under
+transverse point-load (p0 ¼0.04 N) and at different control-gain
+(kd) are evaluated around the fundamental frequency (xn). Similar
+responses for the beam with unconstrained monolithic VEM are
+also evaluated. Fig. 3(a) and (b) illustrate the frequency responses
+and corresponding variations of the control voltage of the overall
+beam. It may be observed from Fig. 3(a) and (b) that attenuation
+increases with the control-gain (kd) while corresponding maximum control-voltage also increases. It may also be noticed that
+attenuation improves in case of the beam with unconstrained 1-
+3 SVC layer as compared monolithic VEM layer. These results indicate that the damping capability may be improved significantly
+using unconstrained 1-3 SVC in the place of monolithic VEM.
+3.2. CLD treatment of beam with constrained 1-3 SVC layer
+In the present section, the damping characteristics of the beam
+with constrained 1-3 SVC are studied. Since the damping depends
+on the geometrical properties (hv ,np, Dp) of 1-3 SVC layer (Fig. 1(a)),
+the optimal configuration of the constrained 1-3 SVC layer is
+decided to maximize the fundamental modal loss factor (g) of
+the overall beam similar to aforesaid in Section 3.1. The values of
+modal loss factor (g) corresponding to geometrical properties
+(hv ,np, Dp) within bounds (20 m 6 hv 6100 m, 46 np 620, 50 m
+6 Dp 6200 m) at different control-gains (kd) are illustrated in a
+three-dimensional contour as shown in Fig. 4. The optimal geometrical properties of constrained 1-3 SVC layer at different controlgains (kd) may be obtained from Fig. 4 with an intent to maximize
+the modal loss factor (g) of the overall beam. These optimal geometrical properties of constrained 1-3 SVC layer at different
+control-gains (kd) are presented in Table 5. With these optimal geometrical properties of constrained 1-3 SVC layer at different
+control-gains (kd) (Table 5), the fundamental frequency (xn) and
+corresponding modal loss factor (g) and it’s extensional (ge) and
+shear (gs) counterparts are illustrated in Table 6. The similar
+results for the beam with constrained monolithic VEM also evaluated (Table 6). It may be observed from Table 6 that the modal loss
+factor (g) and its counterparts (ge,gs) of the beam with constrained
+1-3 SVC layer is greater as compared to the monolithic VEM layer.
+The increase in modal loss factor (g) is due to the combined effect
+of an increase in extensional (ge) and shear (gs) counterparts. This
+may be due to an enhancement of extension/compression and
+shear strains through the inserted active piezoelectric patches in
+VEM layer as discussed in Section 3.1.
+The frequency responses of the beam with a constrained 1-3
+SVC layer under transverse point-load (p0 ¼1.5 N) and at different
+control-gains (kd) are evaluated around the fundamental frequency
+(xn). Similar responses for the beam with constrained monolithic
+VEM are also evaluated. Fig. 5(a) and (b) illustrate the frequency
+responses and corresponding variations of the control voltage of
+the overall beam. It may be noticed from Fig. 5(a) and (b) that
+attenuation increases with the control-gain (kd) while corresponding maximum control-voltage also increases. It may also be
+observed that attenuation increases in case of the beam with a constrained 1-3 SVC layer as compared monolithic VEM layer. These
+aforesaid results stipulate that the damping capacity may be
+improved significantly using constrained 1-3 SVC in the place of
+monolithic VEM.
+Table 5
+Optimal geometrical parameters (hv , np, Dp) of the beam with a constrained 1-3 SVC
+layer at different velocity gains (kd).
+kd hv (lm) np Dp (lm) g
+0 20 6 50 0.0651
+100 20 6 50 0.0693
+500 20 4 50 0.0918
+Table 6
+Comparison of the fundamental frequency (xn) and corresponding modal loss factor (g) and it’s extensional (ge ) and shear (gs ) counterparts of the beam with constrained 1-3 SVC
+layer.
+Treatments xn g ge gs
+CLD treatment of beam with constrained monolithic VEM layer (Passive) 3869.6 0.0256 1.12104 0.0255
+CLD treatment of beam with constrained 1-3 SVC layer (Only passive kd ¼0) 3779.0 0.0651 0.0057 0.0597
+CLD treatment of beam with constrained 1-3 SVC layer (Active-passive kd ¼100) 3777.9 0.0693 0.0096 0.0636
+CLD treatment of beam with constrained 1-3 SVC layer (Active-passive kd ¼500) 3816.38 0.0918 0.0305 0.0869
+Fig. 5. (a) Frequency responses of the overall beam and (b) corresponding variations of the control voltage (CLD treatment, p0 ¼1.5 N).
+6 A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154
+4. Conclusion
+A design of 1-3 SVC is proposed for the augmentation of damping in structural vibration. The 1-3 SVC is designed by inserting
+active piezoelectric patches within the monolithic VEM layer. Both
+UCLD/CLD treatment of beam with unconstrained/constrained 1-3
+SVC is carried out. In order to evaluate the performance of the present 1-3 SVC layer, the optimal geometrical properties are decided
+for the maximum attainable modal loss factor at different controlgains. It is observed that in the case of the beam with 1-3 SVC, the
+modal loss factor and its extension and shear counterparts
+increases simultaneously as compared to monolithic VEM layer.
+It occurs mainly due to an increase in extensional/compression
+and shear strains in VEM layer through the inserted active piezoelectric patches. It is also noticed that damping of the beam with
+1-3 SVC increases with the control-gain while corresponding maximum control-voltage also increases. It is remarked that CLD treatment provides more damping compared to UCLD treatment. Hence
+the aforesaid results reveal that the present 1-3 SVC may be a
+potential damping layer in the UCLD/CLD treatment of structural
+vibration.
+Acknowledgements
+The authors declare that there is no conflict of interest with
+respect to the research, authorship, and/or publication of this article. This research received no specific grant from any funding
+agency in the public, commercial, or not-for-profit sectors.
+References
+[1] H. Oberst, K. Frankenfeld, Damping of the bending vibrations of thin laminated
+metal beams connected through adherent layer, Acustica 2 (1952) 181–194.
+[2] E.E. Ungar, E.M. Kerwin Jr., Plate damping due to thickness deformations in
+attached viscoelastic layers, J. Acoust. Soc. Am. 36 (1964) 386.
+[3] A. Yildiz, K. Stevens, Optimum thickness distribution of unconstrained
+viscoelastic damping layer treatments for plates, J. Sound Vib. 103 (1985)
+183–199.
+[4] P.K. Roy, N. Ganesan, Dynamic studies on beams with unconstrained layer
+damping treatment, J. Sound Vib. 195 (1996) 417–427.
+[5] E. Kerwin, Macromechanisms of damping in composite structures, in: Intern.
+Frict. Damping, Cycl. Plast., ASTM International, 1965.
+[6] W. Swallow, An improved method of damping panel vibrations, Br. Pat. Specif.
+513 (1939) 171.
+[7] E.M. Kerwin Jr, Damping of flexural waves by a constrained viscoelastic layer, J.
+Acoust. Soc. Am. 31 (1959) 952–962.
+[8] N. Alam, N.T. Asnani, Vibration and damping analysis of multilayered
+rectangular plates with constrained viscoelastic layers, J. Sound Vib. 97
+(1984) 597–614.
+[9] J.S. Whittier, The effect of configurational additions using viscoelastic
+interfaces on the damping of a cantilever beam, Wright Air Development
+Command, US Air Force, 1958.
+[10] J.-L. Marcelin, P. Trompette, A. Smati, Optimal constrained layer damping with
+partial coverage, Finite Elem. Anal. Des. 12 (1992) 273–280.
+[11] A. Kumar, S. Panda, Design of a 1–3 viscoelastic composite layer for improved
+free/constrained layer passive damping treatment of structural vibration,
+Compos. Part B Eng. 96 (2016) 204–214.
+[12] E.P. Popov, Engineering Mechanics of Solids, Prentice Hall, 1990.
+[13] L. Meirovitch, Principles and Techniques of Vibrations, Prentice Hall, New
+Jersey, 1997.
+[14] H. Hu, S. Belouettar, M. Potier-Ferry, Review and assessment of various
+theories for modeling sandwich composites, Compos. Struct. 84 (2008) 282–
+292.
+[15] W.A. Smith, B.A. Auld, Modeling 1–3 composite piezoelectrics: thickness-mode
+oscillations, IEEE Trans. Ultrason. Ferroelectr. Freq. Control. 38 (1991) 40–47.
+[16] A.K. Lall, N.T. Asnani, B.C. Nakra, Damping analysis of partially covered
+sandwich beams, J. Sound Vib. 123 (1988) 247–259.
+[17] C.M.A. Vasques, J.D. Rodrigues, Coupled three-layered analysis of smart
+piezoelectric beams with different electric boundary conditions, Int. J.
+Numer. Methods Eng. 62 (2005) 1488–1518.
+[18] K. Deb, Optimization for Engineering Design: Algorithms and Examples, PHI
+Learning Pvt. Ltd., 2012.
+A. Gupta et al. / Materials Today: Proceedings xxx (xxxx) xxx 7
+Please cite this article as: A. Gupta, R. S. Reddy, S. Panda et al., Damping treatment of beam with unconstrained/constrained 1-3 smart viscoelastic composite layer, Materials Today: Proceedings, https://doi.org/10.1016/j.matpr.2020.01.154

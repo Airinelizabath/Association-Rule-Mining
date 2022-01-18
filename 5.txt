@@ -1,0 +1,327 @@
+Mechanical Vibrations
+
+IOP Conference Series: Materials Science and Engineering
+PAPER • OPEN ACCESS
+Passive vibration damping of a cantilever plate
+To cite this article: A Mohamed et al 2020 IOP Conf. Ser.: Mater. Sci. Eng. 973 012036
+View the article online for updates and enhancements.
+You may also like
+On the possibility of development of a
+photochemical unit based on an NH3
+laser
+with an intracavity reactor
+V M Apatin, A N Belokurov, Grigorii N
+Makarov et al.
+-
+Molecular infrared lasers using resonant
+laser pumping (review)
+Arkadii Z Grasyuk, V S Letokhov and V V
+Lobko
+-
+Dissociation of UF6 molecules involving
+excitation of combination modes by
+NH3
+–N2
+laser radiation
+V G Averin, M Akhrarov, G S Baronov et
+al.
+-
+This content was downloaded from IP address 117.99.253.204 on 17/11/2021 at 16:06
+Content from this work may be used under the terms of theCreative Commons Attribution 3.0 licence. Any further distribution
+of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.
+Published under licence by IOP Publishing Ltd
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+1
+Passive vibration damping of acantilever plate
+A Mohamed 1
+, A Hassan1
+, A A Omer1
+ 1 Mechanical engineering department, MTC, Cairo, Egypt
+anwer_mohamed@mtc.edu.eg
+Abstract.Vibration control of mechanical systems divided into two types active and passive, this 
+case study illustrates other approach of passive control of the cantilever plate by using double 
+layers of the viscoelastic material (Dyad 606) one in the upper face of the Al substrate (5051) and
+the second one in the lower face. This layers are affected by axial uniform distributed force by 
+applying tension load, the damping level depend on the value of this axial force where the vertical 
+component of this force consistently the other way of the vibrating element that reduce vibration 
+amplitude in this direction by about (95%) of the original amplitude without damping layers.
+Computational analysis using ANSYS program are used firstly to verify that the results from the 
+software are compatible with that obtained from analytical and experimental evaluation by 
+comparing the values of natural frequencies. Then using ANSYS model to calculate the reduction 
+occurs in the lateral vibration with changing of the axial loads on the viscoelastic plates. The 
+benefits of this model are enhancing the reliability and reducing the cost. 
+1. Introduction
+Various techniques are used in damping process of the undesirable vibrations that may cause damaging of 
+the structures and machines. Damping systems are divided into two main types active and passive [1], at 
+the first, active vibration control uses many kinds of sensors and actuators to generate forces in the right 
+direction and time to sustain the unwanted frequencies that cause vibration[2], this type of vibration 
+control have higher cost and low reliability[3]. On the other hand, passive vibration control doesn’t use 
+any sensor or actuator that require external power units and depend only on the damping properties of the 
+used material[4].
+There are two main types of passive damping, the first one is unconstrained layer damping (UCLD)[5] by 
+adding a completely bonded damping layer on the surface of the vibrating structure,as shown in figure 1
+but this method cannot be used in many mechanical structures due to lower damping ratios[6].The second 
+type In 1959, Kerwin, et al [7] first did a fundamental work in what is called passive constrained layer 
+damping (PCLD), where the damping layer putted in between of the base material layer and constrained 
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+2
+layer that may be made of the same material of the base layer or different material as shown in figure2This 
+type of damping reduces the efficiency of the system and increasing the net cost[8].
+In our work we study other approach of damping system that used two layers of damping material one of 
+them on the upper surface of the base vibrating element and the second one on the lower side to achieve 
+higher damping characteristic, low cost, simplicity and enhanced reliability[9]
+Damping material having different types according to the level of vibration energy dissipation or loss 
+	
+[10that classified into:
+- Conventional materials (that having low loss factor).
+- Composite materials, which exhibited higher viscoelastic properties than conventional materials 
+and having superior specific stiffness and strength[11].
+- Viscoelastic materials, for which the correlation between stress and strain depend on time so that 
+the behavior of this type of material depend on the loading history and that have highest loss 
+factor comparing with the composite materials[12].
+In our damping system we use viscoelastic material type (Dayd 606) in both damping layers
+2. Calculating of natural frequency 
+The natural frequency is the frequency at which a system tends to oscillate in the absence of any driving or 
+damping force. when an object vibrates at frequency equivalents s to natural frequency, its vibration 
+amplitude increases significantly which could lead to irreparable damage. Determination of natural 
+frequency could be estimated with several methods.
+2.1.Numerical invistagation
+The process of developing the finite element model starts in the "Engineering Data section" in ANSYS 
+workbench package version R15.0 [14], by assigning the mechanical properties of all materials used in 
+building the FEM, The materials used are discussed in details in the next section.
+2.1.1.Mechanical properties of FEM materials. An aluminum (AL 5051) rectangular plate and polymer 
+(dyad 606) 
+Table 1 shows the mechanical and geometrical properties of the plain plate andthe damping material used 
+in the (PTLD) treatment
+Figure .1Un constrained layer damping. Figure .2Constrained layer damping.
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+3
+Table 1.Mechanical and geometrical properties of the plain plate.
+Layer Thickness
+ (mm)
+Length
+ (mm)
+Width
+ (mm)
+Density
+ (kg /m3
+) Posion Ratio Young’s 
+Modulus (Pa)
+Aluminum alloy 1.2 300 50 2700 0.33 70×109
+Damping 
+material 0.5 300 60 1120 0.49 20×106
+2.1.2. Meshing of the plate FEM .Meshing process is started by applying mesh tool to the developed 3-D
+model using fine mesh. The number of elements is decided after a convergence study made for the 
+ANSYS model using mesh sensitivity analysis. The convergence isobtained at 5 mm element size.
+The element type is "solid 186" – 20 node homogenous structural solid, figure 3 shows the solid 186 
+element configuration. It is a higher order 3-D 20-node solid element that exhibits quadratic displacement 
+behavior. The element is defined by 20 nodes having three degrees of freedom per node: translations in 
+the nodal x, y, and z directions. The element supports plasticity, hyper elasticity, creep, stress stiffening, 
+large deflection, and large strain capabilities[15]. The geometry, node locations, and the element 
+coordinate system for this element are shown in figure 4
+Figure. 3 Solid 186 element configurations.
+Table 2.Number of elements and nodes used for the plate mesh.
+MODEL TYPE NUMBER OF ELEMENT NUMBER OF NODES
+The plate 720 5403
+The plate with 
+polymer 2160 16209
+Figure. 4 The plate FEM with mesh.
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+4
+2.1.3.Static analysis. Static structural analysis tool is performed to apply the steady inertia loads such as 
+plate gravity, and used to determine the plate displacements, stresses, strains, etc… a cantilever boundary 
+conditions are applied to the FE model. Figure5Shows the plate tip displacement due to gravitational load
+Figure. 5 The plate tip displacement due to gravitational load.
+2.1.4.Modal analysis
+Modal analysis is used to determine the vibration characteristics (natural frequencies and mode shapes) of 
+the cantilever plate and the plate with polymer. It considered as a starting point for more detailed dynamic 
+analysis, such as transient dynamic analysis, harmonic response analysis, or spectral analysis. 
+When frequencies of dynamic load match one of natural frequencies, then resonance takes place, which is 
+considered from the main critical parameter of dynamic structure design. Mode shapes hereinafter called 
+modes, and natural frequencies (NF) of the plate and the plate with polymer are obtained by modal 
+analysis tool. The plate and the plate with polymer mode shape are shown in figures 6, 7, 8, 9. The values 
+of natural frequencies of the plain plate and the plate with polymer layers are tabulated in Table.3
+Table 3. The plate and the plate with polymer mode shape.
+Mode Shape Mode Shape Type Plain Plate Plate with Polymer
+1 Bending 9.7975 8.7
+2 Bending 70.267 60.3
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+5
+Figure. 6 First mode shape of plain plate.
+Figure. 7 Second mode shape of plain plate.
+Figure. 8 First mode shape of plate with polymer.
+Figure.9 Second mode shape of plate with polymer.
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+6
+2.2. Experimentalinvestigations
+The experimental verification of finite element analysis is conducted. The experimental system layout is 
+shown in figure 10. In this experiment, the plate is clamped from one end onto a shaker 4808 with fixation 
+support, and the second end is free. 
+Two accelerometers type PCB PIEZOTRONICS are attached to the plate by a suitable adhesive, one is 
+fixed on the plate free end to measure the output response, and the other is fixed on the shaker fixation 
+support to measure the input excitation. The shaker B&k type 4808is driven by power amplifier B&k type 
+2712, which amplifies the sine sweep, signal (0-200) Hz coming from waveform generator. Chasses of NI 
+compact DAQ-9188 is used for data acquisition system and PC with Lab Viewprogram is used to acquire 
+and analyze the data. The most suitable technique used for characterizing the plate material properties in 
+the frequency range (from 1 up to 1000 Hz) is the frequency response technique[13]. FRF results are 
+processed by comparing the measured acceleration values taken by the accelerometer mounted on the 
+plate free end (output) with the measured acceleration results taken from the accelerometer mounted on 
+the shaker support (input). To obtain exact experimental results, ten repeated measurements are recorded 
+for each experimental set up and the average values are considered as shown in figure 11.
+Figure.10 The experimental setup
+Figure.11 First and second natural frequency with and without polymer
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+7
+3. Finite element modeling verification
+The theoretical results are used to verify the FE model by conducting a comparison between the plainplate
+and the plate with polymer numericallyand experimentally. The comparison between the resonant 
+frequencies of the numerical simulation and the experimental result are shown in table 4.
+The results are in good agreement with an 4 % maximum error. The contrast among FE and exploratory 
+outcomes can be credited to the accompanying:
+ Distinction in material properties among FE and actual plate.
+ Difference in boundary conditions; in FE model, the end is fixed, where in testing it is clamped 
+and there may be still some relative freedom. 
+ -Difference in the portrayal of the accelerometer; in FE model, it is a concentrated mass, where in 
+testing it is stuck to the plate. 
+ -Effect of environmental conditions during tests (temperature...etc.), which are not accounted for 
+in simulation. 
+ In the FE model, just the shaker impact is signified (the environmental vibrations are not 
+represented). 
+Table 4. The plate resonant frequencies(Hz)(numerically/experimentally)
+4.Casestudy
+The main purpose of this technique is to illustrate numerically the fundamentals associated with damping
+the vibration of plate using a new method of passive control layer damping treatment. The developed new 
+model is based on the idea of generating uniformly distributed forces on two layers of the damping 
+materialexperiencing cyclic motionis shown in figure 12. The lateral components of the exerting forces 
+always affecting in direction opposing the angle of rotation of plate. These lateral components have a 
+complex form due to the inherent damping of the elastic layer bonded to the structure fibers. It will be 
+demonstratednumerically that a more than 95% reduction in the peak of the fundamental bending mode of 
+a cantilevered plate can be obtained by virtue of this new technique.
+MODE SHAPE
+THE PLAIN PLATE THE PLATE WITH POLYMER
+Numerical Experiment Numerical Experiment
+1
+9.7975 9.89 8.7 8.72
+2 70.264 71.1 60.1 59.8
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+8
+4.1 Harmonic response analysis
+A harmonic response tool is applied to study the plate FRF for the first two bending modes. It is carried 
+out for the plate with /without the damping material. A transverse excitation force of 1 N with sine sweep 
+signal varies from 0 to 200 Hz is applied at the plate structure. FRF of a structure otherwise called a 
+transfer function is a ratio of the output signal to the input signal in frequency domain. Figure13 shows 
+the amplitude of the plain plate and plate with polymer at different resonant frequencies or called 
+amplitude FRF of the plate and the plate with polymer, hereinafter called the plate and the plate with 
+polymer FRF.
+Figure. 13 The plain plate and the plate with polymer (FRF).
+5. Results and discussion
+The response of the generated exerting force on the reaction of the Plate/PTLD system is assessed. The 
+attenuation percentage is calculated for different3Pretension3forces values, where, the comparison is made 
+with respect to the response of the plain plate as a fixed reference.The attenuation percentageis determined 
+from the accompanying equation.
+100%
+( ,L)
+( ,L) ( ,L)
+( ,L)
+n
+n n '
+n t
+n  
+    
+   [16]
+The performance of the system without the effect of the forces should be study, at this moment, the system 
+response is that response of the Plate/UCLD system, and the damping produced is due to the direct shear 
+Figure. 12 Plain plate with Pretension Layer assembly.
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+9
+strains in the damping layers, in addition to the damping of the base plate. Figure 13 gives the comparison 
+between the Plate with polymer and the corresponding plain Plate.
+Figure14 gives the comparison between the magnitudes of the frequency response functions of the system 
+at different values of the Pretensionforce within the elastic range of the damping material. These figures 
+indicate the high damping efficiency of the new approach. Table 5.gives the relation between the value of 
+the Pretensionforce and the attenuation percentage of the new model at 1st resonance.
+Table 5.The attenuation percentage at different Pretension force.
+Pretension force [N] Attenuation ratio[%]
+0 52.3%
+20 61.9%
+30 69.3%
+40 74.3%
+50 86.8%
+70 91.2%
+100 95.2%
+Figure. 14 Plain plate compare to plate with polymer and pretension polymer.
+6. Conclusion
+A new passive control model used for suppression of the lateral vibrations of a flexible base excited 
+cantilevered Plate is illustrated in the present paper, This new approach, which is called pre-tensioned 
+layer damping (PTLD), is a sort of artificial damping techniques, which is based on the theory of energy 
+dissipation from vibrating systems. The devolved model has a simple, reliable and inexpensive solution
+AMME-19
+IOP Conf. Series: Materials Science and Engineering 973 (2020) 012036
+IOP Publishing
+doi:10.1088/1757-899X/973/1/012036
+10
+for the Plate /PTLD system. At which the major advance in the attenuation of the vibration amplitude has 
+been discussed. the damping ratio is enhanced without the usage of complications control devices that 
+used in case of Active Constrain Layer Damping (ACLD) It is noticed that the higher the elastic 
+Pretensionforces in the pre-tensioned layer damping material that increase the attenuation percentage and 
+the damping efficiency.
+References
+[1] Liang, C-C, et al.2001The free vibration analysis of submerged cantilever plates. Ocean 
+Engineering,. 28(9) pp 1225-1245.
+[2] Baz A and J Ro 1993 Finite element modeling and performance of active constrained layer 
+damping. in Ninth VPI & SU Conference on Dynamics & Control of Large Structures.
+[3] Baz Aand J Ro1995 Performance characteristics of active constrained layer damping. Shock and 
+Vibration, 2(1) p. 33-42.
+[4] Tong X and Zhao X 2018 Passive vibration control of the SCOLE beam system. Structural 
+Control and Health Monitoring, 25(8) pp e2204.
+[5] Johnson CD1995 Design of passive damping systems.
+[6] RoyPand Ganesan N1996Dynamic studies on beams with unconstrained layer damping treatment.
+Journal of Sound and Vibration, 195(3) pp 417-427.
+[7] Ross D, Kerwin E and Ungar E1960 Damping of flexural vibrations by means of viscoelastic 
+laminae, Structural Damping, Ch 3, J Ruzicka ed, Pergamon Press, New York.
+[8] ArisakaT, Saegusa T and KajiwaraI 2018 Active vibration control device and design method 
+therefor, Google Patents.
+[9] SherifH, Abd-Elwahab M and Omer A2003 New Approach for Vibration Control of Cantilevered 
+Structures. in International Conference on Aerospace Sciences and Aviation Technology. The 
+Military Technical College.
+[10] Cai C et al2002 Modeling of material damping properties in ANSYS. in CADFEM Users’ Meeting 
+& ANSYS Conference.
+[11] Treviso A, et al2015 Damping in composite materials: Properties and models. Composites Part B: 
+Engineering, 78 pp 144-152.
+[12] Nakra B1998 Vibration control in machines and structures using viscoelastic damping. Journal of 
+Sound and Vibration, 211(3) pp 449-466.
+[13] HujarePP and Sahasrabudhe A D 2014Experimental investigation of damping performance of 
+viscoelastic material using constrained layer damping treatment. Procedia Materials Science, 5pp
+726-733.
+[14] Inc., A., ANSYS Workbench User Guide2012.
+[15] Yadav D, Sharma A, and Shivhare V2015 Free vibration analysis of isotropic plate with stiffeners 
+using finite element method. Engineering Solid Mechanics, 3(3) pp 167-176.
+[16] Abd-Elwahab M and Sherif H A2006 Pre-tensioned layer damping as a new approach for 
+vibration control of elastic beams. Journal of vibration and acoustics. 128(3) pp 338-346.

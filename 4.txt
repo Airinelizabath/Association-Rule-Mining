@@ -1,0 +1,629 @@
+Mechanical Vibrations
+JOURNAL OF
+SOUND AND
+VIBRATION
+Journal of Sound and Vibration 311 (2008) 1409–1419
+Short Communication
+An experimental investigation of nonlinear vibration and
+frequency response analysis of cantilever viscoelastic beams
+S. Nima Mahmoodia
+, Nader Jalilia,, Siamak E. Khademb
+a
+Smart Structures and Nanoelectromechanical Systems Laboratory, Department of Mechanical Engineering, Clemson University,
+Clemson, SC 29634-0921, USA b
+Department of Mechanical Engineering, School of Engineering, Tarbiat Modarres University, P.O. Box 14115-177, Tehran, Iran
+Received 18 May 2006; received in revised form 13 September 2007; accepted 20 September 2007
+Available online 29 October 2007
+Abstract
+The nonlinear vibration analysis of a directly excited cantilever beam modeled as an inextensible viscoelastic
+Euler–Bernoulli beam has been studied by the authors and is reported in the literature. The viscoelastic damping was
+modeled as Kelvin–Voigt damping, and the nonlinearities arisen from the inextensibility assumption. This paper extends
+our theoretical developments presented in the previous papers and utilizes the method of multiple scales in order to arrive
+at the modulation equations and the closed-form frequency response function. The analytically derived frequency response
+is experimentally verified through harmonic force excitation of samples of carbon nanotube-reinforced beams. The beam
+used in experiment consists of two elastic layers of high-carbon steel sandwiched together through a viscoelastic layer of
+carbon nanotube–epoxy mixture. The results demonstrate that increasing the excitation amplitude or decreasing damping
+ratio can cause a minor decrease in the nonlinear resonance frequency despite the significant increase in the amplitude of
+vibration due to reduced damping.
+r 2007 Elsevier Ltd. All rights reserved.
+1. Introduction
+The nonlinear vibrations of directly excited viscoelastic beam have been studied analytically [1,2]. The beam
+was assumed to be inextensible and followed a classical linear viscoelastic behavior, i.e., Kelvin–Voigt model.
+There are other studies on dynamical modeling of viscoelastic beams, where analytical models for sandwiched
+beams have been proposed and investigated by several researchers ([3,4] are just a few examples). The
+Kelvin–Voigt model is utilized here as the viscoelastic model of the beam. This model has been used to study
+the vibration damping of nonlinear viscoelastic systems [5] and analysis of nonlinear oscillations of simply
+supported viscoelastic rectangular plates [6]. Knowing the geometry and viscoelastic model of the system, the
+equations of motion are obtained considering the direct forced bending vibrations of the system.
+In Ref. [1], an Euler–Bernoulli beam model for a long and thin viscoelastic beam structure was assumed.
+A geometrical approach was utilized to study the bending vibrations of such viscoelastic system. The beam
+ARTICLE IN PRESS
+www.elsevier.com/locate/jsvi
+0022-460X/$ - see front matter r 2007 Elsevier Ltd. All rights reserved.
+doi:10.1016/j.jsv.2007.09.027
+Corresponding author. Tel.: +1 864 656 5642.
+E-mail address: jalili@clemson.edu (N. Jalili).
+was considered to be inextensible and only planar vibration was considered. Such a model has been
+used by several researchers [7–14]. The planar and nonplanar nonlinear vibrations of elastic beams have
+been studied earlier [15,16]. In these systems, the geometry of the system causes the presence of nonlinear
+terms in inertia, damping and stiffness. In nonlinear vibrations of elastic beams, mainly nonlinearities of
+inertia and stiffness exist while damping nonlinearity is negligible [17,18]. Other nonlinearities are produced
+due to presence of friction and structural damping [19]. These two nonlinear terms are nonlinearities in
+damping.
+Although there are many numerical methods such as finite element methods [20] to analyze the nonlinear
+vibration of flexible beams, an analytical method, i.e., method of multiple scales, is utilized in Ref. [1] to derive
+a closed-form solution for the nonlinear frequency equations. This method has been used for the analysis of
+nonlinear vibrations of damped and undamped systems, and nonlinear nonplanar oscillations of elastic
+cantilever beams excited by a combination of parametric resonance in which the effect of geometric and
+inertial nonlinearities in the governing equations of motion and boundary conditions are considered [19,21].
+Analytical study conducted here concludes a relationship for the modulation equations and frequency
+response function, and hence, amplitude-dependent nonlinear frequencies can result. The closed-form
+solution helps better understand the dependence of the system to its physical and geometrical parameters
+and can be used for control of the system [22]. In addition, the proposed method has already been used
+to derive the closed-form solution of nonlinear vibration problems with nonlinear terms of damping and
+stiffness [23].
+In this paper, using the equations of motion of the planar bending vibration of an inextensible viscoelastic
+carbon nanotubes-reinforced cantilever beam, the stability of the system is analytically studied and
+experimentally verified. The motivation behind utilization of carbon nanotubes-reinforced beam in this study
+originates from their interesting properties including damping enhancement [24,25]. Carbon nanotubes have
+also other astounding properties such as very high elastic modulus and high electric current capacity when
+compared with other conductive materials [24–26]. The rest of the paper is organized as follows. In the
+immediately following section, the modeling assumptions and frequency response analysis using the method of
+multiple scales are presented. Experimental setup and results are provided in Sections 3 and 4, and finally
+Section 5 concludes the research and provides future works.
+2. Nonlinear frequency response
+In the derivation of the equations of motions and stability analysis of the nonlinear vibration of the
+viscoelastic beam considered here, the boundary conditions are considered to be clamped–free (see Fig. 1). The
+beam is assumed to be inextensible and a classical linear viscoelastic model, i.e. Kelvin–Voigt model is
+considered. It is assumed that the beam follows the Euler–Bernoulli beam theory, where shear deformation
+and rotary inertia terms are negligible. The beam is also assumed to possess uniform cross-sectional area.
+The non-dimensional form of equations of motion and boundary conditions of the beam, shown in Fig. 1,
+ARTICLE IN PRESS
+Fig. 1. Schematic of the cantilever beam.
+1410 S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419
+can be obtained as [1,2]
+v€ þ Zv_
+iv þ viv þ
+1
+2
+ v0
+Z x
+1
+Z x
+0
+v_
+02 þ v0
+vv€
+0   dx dx
+ 0
+þ ½v0
+ðv0
+v00Þ
+0
+
+0 þ
+1
+2
+Z
+q
+qt
+v00v02 h i00
+þ f cosðOtÞ ¼ 0, (1)
+v ¼ v0 ¼ 0 at x ¼ 0 and v00 ¼ v000 ¼ 0 at x ¼ 1, (2)
+where v is the bending vibration, Z the strain-rate damping coefficient (which appears due to Kelvin–Voigt
+model), O the excitation frequency, and e the perturbation parameter (in order to use the method of multiple
+scales [27,28]). The beam bending vibration, v, can be expanded by order of e as
+vðx;t;Þ ¼ v0ðx;T0; T1Þ þ v1ðx;T0; T1Þþ , (3)
+where T0 and T1 are the time scales. T1 ¼ t is a slow time scale, demonstrating shift in the natural frequencies
+because of the nonlinearity, while T0 ¼ t acts as a fast time scale, characterizing motions occurring at the
+natural frequencies, ok.
+Substituting expression (3) into the partial differential equations of system (1) and boundary conditions (2)
+and separating terms at orders of e, yields
+ð
+0
+Þ :
+q2
+v0
+qT2
+0
+þ viv
+0 ¼ 0, (4)
+v0 ¼ v0
+0 ¼ 0 at x ¼ 0 and v00
+0 ¼ v000
+0 ¼ 0 at x ¼ 1, (5)
+ð
+1
+Þ :
+q2
+v1
+qT2
+0
+þ viv
+1 ¼  2 q2
+v0
+qT0 qT1
+ Z
+qviv
+0
+qT0
+ 1
+2 v0
+0
+Z s
+1
+Z s
+0
+qv_
+02
+0
+qT0
+þ v0
+0
+q2
+v0
+0
+qT2
+0
+ !dx dx
+" #0
+ ½v0
+0ðv0
+0v00
+0Þ
+0
+
+0
+ Z
+1
+2
+qv_
+00
+0
+qT0
+v02
+0 þ v00
+0v0
+0
+@v_
+0
+0
+@T0
+ 00
+þ f cosðOT0Þ, ð6Þ
+v1 ¼ v0
+1 ¼ 0 at x ¼ 0 and v00
+1 ¼ v000
+1 ¼ 0 at x ¼ 1. (7)
+The Galerkin approximation can now be used to represent v(x,t) as a series of products of spatial functions
+of only x and time-dependent functions as
+vðx;tÞ ¼ X1
+n¼1
+vnðx;tÞ ¼ X1
+n¼1
+pnðxÞqnðtÞ, (8)
+where pn are the eigenfunctions of a linear uniform cantilever beam and qn are the generalized time-dependent
+coordinates. The solution of linear equation (4) with the boundary conditions (5) can be given as
+v0 ¼ 1
+2pkðxÞ akðT1ÞeibkðT1Þ
+eiokT0 þ akðT1ÞeibkðT1Þ
+eiokT0
+ , (9)
+where ak and bk can be found by applying the solvability conditions to the problem as discussed later in this
+section. The solvability condition demands that the eigenfunctions be orthogonal, i.e.
+hpnðxÞ; pmðxÞi ¼ Z 1
+0
+pnðsÞpmðsÞ ds ¼ dnm (10)
+and dnm is the Kronecker delta. For the case of primary resonance,
+O ¼ okð1 þ sÞ, (11)
+where s is the detuning parameter. Substituting Eqs. (9) and (11) into (6), and applying the condition of
+Eq. (10), the secular terms which should be equal to zero become
+2iok
+1
+2
+a0
+k þ
+1
+2
+iakb0
+k
+ 	 þ
+1
+2
+iZokak þ ð3a1  2a2o2
+k þ ioka4Þ
+a3
+k
+8  FkeiðoksT1bkÞ ¼ 0, (12)
+ARTICLE IN PRESS
+S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419 1411
+where
+Fk ¼
+Z 1
+0
+f
+2
+pkðxÞ dx, (13)
+a1ðokÞ¼hpkðxÞ; ½p0
+kðp0
+kp00
+kÞ0
+i, (14)
+a2ðokÞ ¼ pkðxÞ; p0
+k
+Z x
+1
+Z x
+0
+p0
+k
+2 dx dx
+
+    (15)
+and
+a4ðokÞ ¼ pkðxÞ; Z 3p0
+k
+2
+p00
+k
+h i D E00
+. (16)
+Separating the real and imaginary parts of Eq. (12) in the form of
+a0
+k ¼  1
+2
+Zak  a4
+a3
+k
+8 þ
+Fk
+ok
+sinðoksT1  bkÞ, (17)
+akb0
+k ¼ 3a1  2a2o2
+k
+ 
+ a3
+k
+8ok
+ Fk
+ok
+cosðoksT1  bkÞ (18)
+defining g as a new phase parameter
+gk ¼ oksT1  bk (19)
+and substituting Eq. (19) into (17) and (18), the modulation equations can be obtained as
+a0
+k ¼  1
+2
+Zak  a4
+a3
+k
+8 þ
+Fk
+ok
+sinðgkÞ, (20)
+akg0
+k ¼ oksak  ð3a1  2a2o2
+kÞ a3
+k
+8ok
+þ
+Fk
+ok
+cosðgkÞ. (21)
+Using modulation equations, the frequency response of the system reduces to
+1
+2
+Zak þ a4
+a3
+k
+8
+ 	2
+þ oksak  3a1  2a2o2
+k
+ 
+ a3
+k
+8ok
+ 	2
+¼ Fk
+ok
+ 	2
+. (22)
+Solving the frequency response function (22) for s results in
+s1 ¼ ð3a1  2a2o2
+kÞ a2
+k
+8o2
+k
+þ
+1
+akok
+ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+Fk
+ok
+ 	2
+ 1
+2
+Zak þ a4
+a3
+k
+8
+ 	2 s
+, (23)
+s2 ¼ ð3a1  2a2o2
+kÞ a2
+k
+8o2
+k
+ 1
+akok
+ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+Fk
+ok
+ 	2
+ 1
+2
+Zak þ a4
+a3
+k
+8
+ 	2 s
+. (24)
+Using the modeling efforts developed here, the vibration of the viscoelastic beam can be numerically
+illustrated. Considering the beam in Fig. 1 with the physical properties listed in Table 1, the frequency
+response of the system due to a direct excitation of the first mode may be obtained as shown in Fig. 2.
+In the following section, the frequency response function developed here is experimentally verified.
+A comparison study will follow to verify the modeling assumptions taken here.
+3. Experimental setup and methods
+The experimental investigation of the nonlinear vibrations of the beam system is presented here when
+considering its first mode. This section provides the process of fabricating the beam followed by the
+experimental setup and results as discussed next.
+ARTICLE IN PRESS
+1412 S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419
+3.1. Fabrication of the viscoelastic beam
+The viscoelastic beam considered here consists of three layers, as shown in Fig. 3. The two outer elastic
+layers are high-carbon steel with elastic modulus of 190 GPa. In order to make the viscoelastic layer, 1 g of
+epoxy resin and 1 g of epoxy hardener are mixed, and depending on the sample, 0%, 2.5% or 5% (percentages
+are by weight) multiwalled carbon nanotube (MWCNT) is added and mixed with the resin. The carbon
+nanotube is added on one side of both steel layers and then sandwiched to form a viscoelastic layer between
+the two steel layers. The viscoelastic beam is then cured at room temperature for about 5 h under a load of
+20 N. Following this, the samples were cured at 60 1C for about 24 h under no load. Finally, the beam was
+brought to room temperature and the extra resin coming out of the edges was trimmed and the beams were
+cleaned [25]. As reported in Ref. [25], the equivalent damping ratio Z for the samples were found to be Z ¼ 0.08
+for 2.5% MWCNT and Z ¼ 0.063 for 5% MWCNT.
+3.2. Experimental setup
+The beam fabricated in the previous subsection is now subjected to a harmonic force excitation over the
+length of the beam. In order to experimentally simulate this condition, one end of the beam is mounted to an
+inertial actuator via an impedance head. The impedance head is used to simultaneously provide base
+acceleration and excitation force measurements. A laser sensor is also utilized to measure the vibrations of the
+tip of the beam. The setup is shown in Fig. 4.
+As explained earlier, a layer of MWCNT mixed with epoxy is sandwiched between two high-carbon
+steel layers with the thickness of 0.86 mm each. A closer picture of the beam is depicted in Fig. 5. The beam
+ARTICLE IN PRESS
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+-0.20 -0.15 -0.10 -0.05 0.00 0.05 0.10 0.15 0.20
+v(1,t)
+σ
+Fig. 2. Frequency response curve for damping ratio Z ¼ 0.063 and force f ¼ 0.08 N.
+Table 1
+Physical properties of the viscoelastic cantilever beam
+Symbol Property Value
+EI Beam rigidity 0.453 Pa m4
+l Beam length 140 mm
+wb Beam width 12.5 mm
+h1 Viscoelastic layer thickness 1.25 mm
+h2 Steel layer thickness (each) 0.86 mm
+S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419 1413
+length is 140 mm with its width of about 12.5 mm. There are three samples with different viscoelastic
+layers, namely; a plain epoxy layer, 2.5% MWCNT mixed with epoxy, and finally 5% MWCNT mixed
+with epoxy.
+To excite the viscoelastic beam, an electromagnetic inertial actuator (SA-5) is used, as shown in Fig. 4. On
+top of the shaker, a PCB model 288D01 impedance head sensor connects the shaker to the structure where
+beam is clamped in. The impedance head provides measurements for both the base acceleration and excitation
+force. The vibration of the tip is measured and monitored by a DynaVision LDS laser distance sensor. All
+signals are sent and processed via a dSPACEs CP1104 board, which is utilized by ControlDesks and Matlab
+Simulinks software packages.
+ARTICLE IN PRESS
+Fig. 3. (a) A schematic of a MWCNT-reinforced beam, (b) different beam layers and (c) scanning electron microscopy (SEM) image of the
+multiwalled MWCNT–epoxy composite.
+Laser head
+SA-5 actuator Cantilever beam
+Impedance head
+Fig. 4. Experimental setup for the beam with base excitation.
+1414 S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419
+3.3. Test method and configurations
+Three beams with different viscoelastic layers (plain epoxy, 2.5% MWCNT mixed with epoxy and 5%
+MWCNT mixed with epoxy) are utilized for the tests. For each beam, four experimental runs are performed.
+In the first three runs, the beam is excited with a harmonic force with constant amplitude and
+excitation frequency near the first mode of the beam. A frequency sweep is performed and the amplitude
+is measured near natural frequency. In the second and third runs, the amplitude of excitation changes to
+another constant value and again the frequency is swept. In the fourth run, the beam is excited in its first
+vibrational mode and then the excitation is removed and the vibration is measured in order to study the
+damping effects.
+In the first three runs, the frequency is swept from 20% of the first natural frequency to 20% over it, and
+the vibration amplitude is measured and recorded. The frequency sweep has been done in both directions of
+low to high and high to low frequencies. Through extensive runs, it is found that the first vibration mode for
+the plain (0% MWCNT) epoxy is about 22 Hz, 2.5% MWCNT–epoxy is about 33.5 Hz, and 5%
+MWCNT–epoxy is about 37 Hz. In the second run, the amplitude of excitation is decreased to 0.6 (and 0.3 for
+the third run) of the amplitude of the first run (with its amplitude being 1) and the same process of the first run
+was performed. In the forth run, the beams were excited at their first natural frequencies with amplitude of
+0.15 of the first run, the excitation is then removed and vibration amplitude is measured. The sampling
+frequency rate is 0.5 Hz. In each step after shifting to new excitation frequency, it is waited enough for the
+response to become steady and then the amplitude is measured.
+The actual position of the laser is about 2–4 mm above the tip of the beam. However, it is considered
+that the laser position is the tip in numerical calculations. This means if the beam length is considered
+to be x ¼ 1.0, then the position of the laser is at x ¼ 0.97. A more closer observation on Fig. 3b, it is seen that
+the tip of the beam is rounded so the mass per length at the tip is less than the rest of the beam. These two
+conditions bring small errors in calculations of natural frequency. However, by numerically studying these
+conditions and their error effects on the analysis, it appears that they compensate and the combined error is
+negligible.
+4. Results and discussions
+The equations of motion of the carbon nanotube-reinforced beam have been derived, and using the method
+of multiple scales a closed-form solution has been presented. Considering the properties of the beams used in
+the experiment (see Table 1), the frequency response function of the beams has been plotted using the
+mathematical model derived in Section 2. These results can now be experimentally verified. The frequency
+ARTICLE IN PRESS
+High-Carbon Steel
+Epoxy-MWNT
+Fig. 5. Arrangement of the MWCNT-reinforced viscoelastic beam clamped to an inertial actuator.
+S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419 1415
+response curve for 5% MWCNT–epoxy beam can be compared as plotted in Fig. 6. Considering the primary
+resonance condition, if s ¼ 0, then the excitation frequency equals to linear natural frequency O ¼ o1.
+The resonance does not occur exactly in the linear natural frequency since the system is nonlinear with a
+nonlinear natural frequency [19].
+Similarly, the comparison results between experiment and theoretical modeling for 2.5% MWCNT–epoxy
+beam are shown in Fig. 7. In all these results (Figs. 6 and 7), when the frequency approaches near a specific
+frequency (here near 20 Hz), the frequency responses change significantly due to change in sensitivity of the
+shaker. The inertial actuator used here has a natural frequency around 20 Hz, so the frequency response close
+to 20 Hz cannot be accurately obtained. The jump phenomenon is observed here in the results since the
+damping is strong enough and the amplitude of vibration is not too large (considering the damping) to cause
+the jump.
+Fig. 8 shows that the increase in amplitude of excitation force causes not only the increase of the amplitude
+of vibration, and particularly the amplitude of resonance vibration, but also a small shift of resonance to a
+lower frequency. When the excitation is kept constant and the damping ratio varies as shown in Fig. 9,
+the amplitude of the vibration at resonance increases as the damping factor decreases. In addition, a small
+ARTICLE IN PRESS
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+-0.20 -0.15 -0.10 -0.05 0.00 0.05 0.10 0.15 0.20
+v(1,t)
+σ
+Fig. 6. First mode frequency response curve for 5% MWCNT–epoxy beam with damping ratio Z ¼ 0.063 and force f ¼ 0.08 N; (–)
+numerical simulations and () experimental results.
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+-0.25 -0.15 -0.05 0.05 0.15 0.25
+σ
+v(1,t)
+Fig. 7. First mode frequency response curve for 2.5% MWCNT–epoxy beam with damping ratio Z ¼ 0.08 and force f ¼ 0.08 N; (–)
+numerical simulations and (+) experimental results.
+1416 S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419
+shift of resonance to a lower frequency appears as the value of the damping ratio reduces. The experimental
+data presented in Fig. 9 are for 2.5% MWCNT (i.e., Z ¼ 0.063) and 5% MWCNT (i.e., Z ¼ 0.08) to
+avoid undue complication in the figure. In order to provide the evaluation of the frequency response
+as a function of damping, the numerical results are provided for all the three samples including plain epoxy
+beam.
+5. Conclusions
+The equations of motion of planar nonlinear vibrations of an inextensible viscoelastic cantilever beam have
+been utilized to study the frequency response function of the system. The viscoelastic material follows a
+classical linear viscoelastic model, i.e., Kelvin–Voigt assumption. Using the method of multiple scales, the
+frequency response function and the phase-amplitude modulation equations of the system due to a direct
+harmonic excitation were derived for the case of primary resonance. In addition, three different sample beams
+were fabricated including two carbon nanotube-reinforced beams. The experimental results matched the
+theoretical formulations very closely. The results demonstrated that increasing the amplitude of excitation or
+decreasing the damping can cause a minor decrease in the nonlinear frequency of the resonance despite of an
+increase in amplitude of vibration due to reduced damping.
+ARTICLE IN PRESS
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+-0.16 -0.11 -0.06 -0.01 0.04 0.09 0.14
+σ
+v(1,t)
+Fig. 8. Frequency response curves for 5% MWCNT–epoxy for various force with damping ratio Z ¼ 0.063; numerical simulations for
+f ¼ 0.07 (–) and f ¼ 0.08 (- -); experimental results for f ¼ 0.07 N (n) and f ¼ 0.08 N ().
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+-0.2 -0.15 -0.1 -0.05 0 0.05 0.1 0.15 0.2
+σ
+v(1,t)
+Fig. 9. Frequency response curves for various damping ratios Z with force f ¼ 0.08 N; (–) numerical simulations for Z ¼ 0.08, (- -) for
+Z ¼ 0.063 and (-d-) for Z ¼ 0.04; (+) experimental results for Z ¼ 0.08 and () for Z ¼ 0.063.
+S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419 1417
+Acknowledgments and disclaimer
+The materials presented here are based upon work supported in part by the National Science Foundation
+under CAREER Grant no. CMMI-0238987. Any opinions, findings, and conclusions or recommendations
+expressed in these materials are those of the authors and do not necessarily reflect the views of the National
+Science Foundation. The authors would also like to thank Mr. Himanshu Rajoria for his help in fabrication of
+the beams used here.
+References
+[1] S.N. Mahmoodi, S.E. Khadem, N. Jalili, Theoretical development and closed-form solution of nonlinear vibrations of a directly
+excited nanotube-reinforced composite cantilever beam, Archive of Applied Mechanics 75 (2006) 153–163.
+[2] S.N. Mahmoodi, N. Jalili, S.E. Khadem, Passive nonlinear vibrations of a directly excited nanotube-reinforced composite cantilever
+beam, Proceedings of 2005 ASME International Mechanical Engineering Congress & Exposition, Symposium on Vibration and Noise
+Control, Orlando, FL, November 2005.
+[3] T. Bailey, J.E. Hubbard Jr., Distributed piezoelectric polymer active vibration control of a cantilever beam, AIAA Journal of
+Guidance Control Dynamic 8 (1985) 605–611.
+[4] Q. Wang, S.T. Quek, Flexural vibration analysis of sandwich beam coupled with piezoelectric actuator, Smart Materials & Structures
+9 (2000) 103–109.
+[5] D. Bratosin, T. Sireteanu, Hysteretic damping modeling by nonlinear Kelvin–Voigt model, Proceeding of the Romanian Academy
+Series A 3 (2002) 1–6.
+[6] E. Esmailzadeh, M.A. Jalali, Nonlinear oscillations of viscoelastic rectangular plates, Nonlinear Dynamics 18 (1999) 311–319.
+[7] H.N. Arafat, A.H. Nayfeh, C. Chin, Nonlinear nonplanar dynamics of parametrically excited cantilever beams, Nonlinear Dynamics
+15 (1998) 31–61.
+[8] M.R.M. Crespo da Silva, Nonlinear flexural–flexural–torsional–extensional dynamics of beams—I. Formulation, International
+Journal of Solid Structures 24 (1988) 1225–1234.
+[9] M.R.M. Crespo da Silva, Nonlinear flexural–flexural–torsional–extensional dynamics of beams—II. Response analysis, International
+Journal of Solid Structures 24 (1988) 1235–1242.
+[10] M.R.M. Crespo da Silva, Equations for nonlinear analysis of 3D motions of beams, Applied Mechanics Reviews 44 (1991)
+s51–s59.
+[11] M.R.M. Crespo da Silva, C.C. Glynn, Nonlinear flexural–flexural–torsional dynamics of inextensional beams. I. Equations of
+motion, Journal of Structural Mechanics 6 (1978) 437–448.
+[12] M.R.M. Crespo da Silva, C.C. Glynn, Nonlinear flexural–flexural–torsional dynamics of inextensional beams. II. Forced motions,
+Journal of Structural Mechanics 6 (1978) 449–461.
+[13] N. Jalili, E. Esmailzadeh, A nonlinear double-winged adaptive neutralizer for optimum structural vibration suppression, Journal of
+Communications in Nonlinear Science and Numerical Simulation 8 (2003) 113–134.
+[14] E. Esmailzadeh, N. Jalili, Parametric response of cantilever Timoshenko beams with tip mass under harmonic support motion,
+International Journal of Nonlinear Mechanics 33 (1998) 765–781.
+[15] A.H. Nayfeh, C. Chin, S.A. Nayfeh, Nonlinear normal modes of a cantilever beam, ASME Journal of Vibration and Acoustics 117
+(1995) 477–481.
+[16] H.N. Arafat, A.H. Nayfeh, Investigation of subcombination internal resonances in cantilever beams, Shock and Vibration 5 (1998)
+289–296.
+[17] A.H. Nayfeh, S.A. Nayfeh, On nonlinear modes of continuous systems, ASME Journal of Vibration and Acoustics 116 (1994)
+129–136.
+[18] S.W. Shaw, C. Pierre, Normal modes of vibration for nonlinear continuous systems, Journal of Sound and Vibration 169 (1994)
+319–347.
+[19] S.N. Mahmoodi, S.E. Khadem, M. Rezaee, Analysis of nonlinear mode shapes and natural frequencies of continuous damped
+systems, Journal of Sound and Vibration 275 (2004) 283–298.
+[20] J. Chung, H.H. Yoo, Dynamic analysis of a rotating cantilever beam by using the finite element method, Journal of Sound and
+Vibration 249 (2002) 147–164.
+[21] S.A. Emam, A.H. Nayfeh, Nonlinear response of buckled beams to subharmonic-resonance excitations, Nonlinear Dynamics 35
+(2004) 105–122.
+[22] M. Eissa, Y.A. Amer, Vibration control of a cantilever beam subject to both external and parametric excitation, Applied Mathematics
+and Computation 152 (2004) 611–619.
+[23] M.M. Kamel, Y.A. Amer, Response of parametrically excited one degree of freedom system with nonlinear damping and stiffness,
+Physica Scripta 66 (2002) 410–416.
+[24] H. Rajoria, N. Jalili, Determination of strength and damping characteristics of carbon nanotube–epoxy composites, Proceedings of
+2004 ASME International Mechanical Engineering Congress & Exposition, Anaheim, CA, November 2004.
+[25] H. Rajoria, N. Jalili, Passive vibration damping enhancement using carbon nanotube–epoxy reinforced composites, Composites
+Science and Technology Journal 65 (2005) 2079–2093.
+ARTICLE IN PRESS
+1418 S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419
+[26] P. Avouris, T. Hertel, R. Martel, T. Schmidt, H.R. Shea, R.E. Walkup, Carbon nanotubes: nanomechanics, manipulation and
+electronic devices, Applied Surface Science 141 (1999) 201–209.
+[27] A.H. Nayfeh, B. Balachandran, Applied Nonlinear Dynamics: Analytical, Computational, and Experimental Methods, Wiley,
+New York, 1995.
+[28] A.H. Nayfeh, Perturbation Methods, Wiley, New York, 1973.
+ARTICLE IN PRESS
+S.N. Mahmoodi et al. / Journal of Sound and Vibration 311 (2008) 1409–1419 1419

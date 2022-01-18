@@ -1,0 +1,325 @@
+Mechanical Vibrations
+
+Available online at www.sciencedirect.com
+ScienceDirect 
+Materials Today: Proceedings 5 (2018) 16199–16205 www.materialstoday.com/proceedings 
+2214-7853 © 2017 Elsevier Ltd. All rights reserved. 
+Selection and/or Peer-review under responsibility of International Conference on Advanced Materials (SCICON ‘16).
+SCICON 2016 
+Evaluation of natural frequencies and damping ratios of coconut 
+shell particles reinforced epoxy composites 
+Manjunatha Chary G Ha,*, K Sabeel Ahmeda
+a
+Jawaharlal Nehru National College of Engineering, Shivamogga – 577204, Karnataka, India
+Abstract 
+ Modal analysis comprises of determination of natural frequency, mode shapes and damping factor of dynamic structures. It 
+is essential in analyzing the response of a structure in real-life situations to avoid resonance condition under excitation. Now a 
+days, composites with natural fiber/particle materials are in considerable demand for structural applications as an alternative
+material to conventional synthetic fiber composites. However, adequate amount of work on modal analysis of these composites 
+has not been noticed in the literature. The objective of the present work is to evaluate the influence of coconut shell particle size 
+and its volume fraction on natural frequencies and damping factor of coconut shell particles filled epoxy composites. Coconut 
+shell particles reinforced composites (CSPE) were developed using open mould technique with particle sizes of 0.25, 0.5,1 and 2
+mm and particle volume fractions of 40%, 50% and 60%. The experimental set up consists of a composite cantilever beam (270 
+mm × 40 mm × 12 mm), impact hammer, accelerometer and computer interfaced data acquisition system. Acceleration v/s Time 
+plots were acquired using LAB VIEW virtual instrumentation software and converted into Amplitude v/s Frequency plot by Fast 
+Fourier Transform (FFT) using MAT LAB. The natural frequencies are also predicted theoretically and numerically (using 
+ANSYS). The damping ratio was determined using half power band width method. The results reveal that as the particle size and 
+its volume fraction increases, the natural frequency decreases whereas it is vice versa in case of damping factor. The 
+experimental, theoretical and numerical values of natural frequencies are found to be in good agreement. It is concluded that 
+CSPE composites possesses the damping ratios comparable to conventional composite materials such as glass fiber filled epoxy 
+composites. 
+© 2017 Elsevier Ltd. All rights reserved. 
+Selection and/or Peer-review under responsibility of International Conference on Advanced Materials (SCICON ‘16).
+Keywords: Coconut shell particles; Natural frequency; Damping ratio; Half-power band widthIntroduction 
+1. Introduction 
+ In the recent years, the researchers are focusing their concern to develop new composite materials containing 
+natural particles in place of classical reinforcement materials like glass fibers, carbon fibers, nylon etc. The use of 
+ * Corresponding author. Tel.: +91 9481287468; fax: +91-08182-222450. 
+E-mail address: manju_gh2006@yahoo.co.in 
+16200 Chary G.H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205
+natural particles (bio based) in the place of synthetic materials are due to several advantages like low density, low 
+scarcity of wood resources. Natural frequency and damping factor are the important modal parameters for the design 
+of structures for which vibration control and cyclic loading are critical. All engineering materials dissipate energy 
+under cyclic loading. Some of them, like elastomer, plastic, and rubber, dissipate more energy per cycle than 
+metallic materials. The aforementioned modal parameters are affected by repeated corrosion, grain size, porosity, 
+and fatigue, especially in metallic materials. Polymer matrix composites are commonly used in weight sensitive 
+structures due to their high stiffness-to-weight ratio. They are especially significant in aircraft, aerospace, and 
+military applications. The dynamic stability is an important design requirement in polymer matrix composite 
+structures. Hence, natural frequency and damping properties must be investigated for possible use in various 
+applications. Several studies have been carried out on the vibration properties of polymer matrix composite materials 
+[1-6]. Mehmet1
+ investigated the effect of temperature on vibration properties of polyethylene fiber composite 
+(UHMW-PE UD-HB2) with different fiber orientations of 00
+ and 900
+. The frequency response was measured by 
+using damping monitoring equipment. The obtained results of frequency response were compared with numerical 
+results and are found to be in good agreement. It is observed that natural frequency decrease with the increasing 
+temperature. Satish2
+ has made an attempt to analyze the modal behavior of bi-woven (00
+/900
+) laminates made of 
+Glass and Graphite fibers of different thicknesses of 2mm and 4mm reinforced with epoxy resin. Tests were carried 
+out for different boundary conditions (cantilever, two sides fixed and all sides fixed) and analysis of the damping. 
+Results revealed that both natural frequency and percent modal damping of graphite/epoxy laminate is more 
+dominant than glass/epoxy laminates. Ravi3
+ studied the effect of natural rubber particles addition on the vibration 
+properties of epoxy (Lapox 12 with hardener K6) - filled glass fiber (5 mil plain mat) composite laminate in the ratio 
+of 40:60 (fiber: resin) by wt%. Samples were prepared by adding 10 wt% natural rubber particles of distinct sizes 
+(0.9, 0.45 0.254 and 0.0975 mm of approximately spherical shape). Tests were carried out to determine the damping 
+properties of different samples. Results revealed that damping ratio increase with the addition of natural rubber 
+particles. Composite with 0.254mm particles addition improved the damping property than other particle sizes 
+without greatly affecting the stiffness property. Ray4 developed a polymer matrix composite with fly ash as filler for 
+high damping characterization. The unsaturated polyester mixed with SBR latex particles in three different weight 
+fractions was used as matrix system. Fly ash was used as filler with 40 and 50 wt% to develop the composites. 
+Results revealed that composite with 5 wt% SBR latex and 50wt% fly ash exhibited high damping characteristic.
+Aly5 studied the effect of fiber orientations on the vibration behavior of beams made of glass fiber (bidirectional 
+fabric) reinforced polyester composites. Experimental tests were carried out using composite beams with distinct 
+fiber orientations (00
+, 150
+, and 300
+). From the results, it is observed that increasing the angle of the fibers from 00 to 
+300
+ reduces the frequency from 22 to 17 Hz (23%) in 1st mode and 146.5 to 121Hz (17.5%) in 2nd mode of vibration. 
+The obtained results were compared with numerical results and found to be in good agreement. This study concludes 
+that it may help the designer in selection of fiber orientation to shift the natural frequency to the desired value or to 
+Nomenclature 
+ξ Damping ratio 
+f Resonant frequency in Hertz
+fn Natural frequency in Hertz 
+β Constant value dependent on boundary condition of beam 
+E Young’s modulus in N/m2
+I Moment of inertia of cross section in m4 
+ρ Density of the material in Kg/m3 
+A Cross sectional area in m2 
+L Length of the beam in m 
+ Chary G H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205 16201
+control the vibration level. Mahmood6
+ determined the damping properties of polymer matrix (glass fiber/epoxy) 
+composites for various fiber volume fractions of 10, 20, 30, 40, 50, 60 and 70% by analytical methods (Rule of 
+mixtures, HASHIN Model, HALPIN TSAI Model), experimental, and semi-empirical method. For validation, 
+experiments were carried out using universal testing machine to acquire the values of specific damping capacity. 
+Finally, author has concluded that experimental method can be used successfully to measure the damping properties 
+of composites. Also, semi-empirical approach that considers the experimental correlation factors is closer to reality. 
+ From the review of literature, it can be seen that the study on vibration parameters of natural particle composites 
+is scanty. Hence an attempt has been made to evaluate the natural frequencies and damping ratios of CSPE 
+composites. 
+2. Experimental 
+2.1Material details 
+ The materials used for fabrication of composites consists of fully dried coconut shell particles of distinct sizes 
+viz., 0.25mm, 0.5mm, 1mm, and 2mm as reinforcement material. The epoxy resin LY556 and hardener HY951 in 
+the ratio of 10:1 was used as matrix. 5% of melamine was also added into the matrix to have better surface finish of 
+the developed composites. The materials were purchased from M/s Insulation house, Bangalore, India. 
+2.2Fabrication of Composite 
+ The CSPE composite beams (cantilever type) were fabricated with different particle volume fractions of 40%, 
+50% and 60% using distinct particle sizes of 0.25mm, 0.5mm, 1mm, and 2mm by open mould process. Density is a 
+fundamental physical property that can be used in conjunction with other properties for the characterization of 
+composite. The densities of CSPE composite with different volume fractions were determined by the water 
+displacement method according to the ASTM D 792-00. The densities of CSPE composites with particle volume 
+fractions of 40%, 50% and 60% was found to have 933, 884 and 842 kg/m3
+ respectively. It is observed that density 
+of the composite decreases as the volume fraction of particle (coconut shell particle) increase in the composite. The 
+reason may be due to the less density of particle than the matrix system. The details of fabricated composite beam 
+samples are presented in Table 1. The elastic modulus required for the measurement of theoretical frequencies are 
+also investigated by conducting the tensile test and presented in the same table (Table1). 
+2.3 Measurement of natural frequency and damping ratio 
+ An experimental set up developed for the measurement of natural frequency and damping ratio is shown in 
+Figure 1. It consists of CSPE composite beam of size 300 mm × 50 mm × 12 mm. The beam was clamped over a 
+length of 97 mm and the remaining cantilever portion of 203 mm was used for excitation. A piezo electric 
+accelerometer was mounted at free end of the cantilever beam. Care has been taken to trace the antinodes for fixing 
+the accelerometer at the free end. The accelerometer is connected to computer interfaced data acquisition system 
+with LABVIEW virtual instrumentation software. The excitation of the test samples were induced using impulse 
+hammer. The response from the accelerometer was then converted into electrical signals by the data acquisition 
+system. Acceleration v/s Time plots were acquired and converted into Amplitude v/s Frequency plot by Fast Fourier 
+Transform (FFT) using MAT LAB. The peaks in the frequency response spectrum are the locations of natural 
+frequencies. The damping ratio was calculated by half-power bandwidth method [3] using the obtained frequency 
+response functions using equation (1). 
+ 1 2 f - f 2ξ = f (1) 
+Where f1 and f2 are the frequencies corresponding to the bandwidth at a point 1/√2 times the maximum amplitude at 
+resonant frequency. Three identical samples for each particle size and each particle volume fraction were tested to 
+establish the uncertainty in the experimentation. 
+16202 Chary G.H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205
+ Table 1. Details of fabricated CSPE composite samples 
+3. Theoretical 
+ The theoretical natural frequencies of CSPE composite cantilever beam (fixed-free condition) were 
+determined using the equation (2) which is derived from Euler-Bernoulli equation from literature [1]. 
+ 2
+i
+n 2 f β EI = 2πL ρA (2) 
+ where i = 1, 2 . . . n represent the modes of natural frequency . For fixed-free boundary conditions, β1 = 1.875, 
+ β2 = 4.694, and β3 = 7.855 for the first, second, and third modes respectively. 
+ Fig.1. Experimental Setup 
+4. Numerical 
+ The modal analysis of CSPE composite cantilever beams were carried out using ANSYS 14.0 finite element 
+simulation tool. Linear elastic isotropic model was used for the investigation. Young’s modulus and density values 
+of composite are essential for the analysis. BEAM 3 (Beam 2D elastic) element was used for the analysis that has 3 
+degrees of freedom (translation along the X and Y axes, and rotation about the Z axis). Analysis was carried using 
+subspace method which gives more accurate values of natural frequency and the obtained results are compared with 
+the results of experimental and theoretical analysis. 
+Series name Samples 
+designation
+Particle size 
+(mm)
+Particle volume 
+fraction (%)
+Elastic modulus 
+(GPa)
+Series A
+A1 0.25 40 1.95 
+A2 0.25 50 1.77 
+A3 0.25 60 1.61 
+Series B
+B1 0.5 40 1.72 
+B2 0.5 50 1.64 
+B3 0.5 60 1.53 
+Series C
+C1 1.0 40 1.65 
+C2 1.0 50 1.58 
+C3 1.0 60 1.51 
+Series D
+D1 2.0 40 1.63 
+D2 2.0 50 1.48 
+D3 2.0 60 1.39 
+Circuit drawn in LABVIEW VI software
+Accelerometer 
+CSPE composite 
+cantilever beam 
+Impact hammer 
+Data acquisition hardware 
+ Chary G H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205 16203
+5. Results and Discussion 
+ The first two resonant frequencies of the composite beam samples observed from the experiments are presented in 
+Table 2. The particle size and particle volume fraction have significant effect on resonant frequency. The resonant 
+frequencies of CSPE composite beams showed decreasing trend with the increase in size of coconut shell particles 
+(particle size) and particle volume fraction. Since beams were excited at lower frequencies, only first two resonant 
+frequencies could be observed. The experimentally obtained results are compared with the analytical data that are 
+calculated using Eq. (2) and numerical results. It is seen that the experimental results are in good agreement with both 
+analytical and numerical results. The damping plays a major role at resonant frequencies and hence, damping ratios are 
+also evaluated at resonant frequencies. The damping ratio ξ of the composite cantilever beam for resonant frequencies 
+corresponding to first two modes of vibration are indicated in Table 3. It is observed from Table 3 that, damping ratio is 
+higher for lower resonant frequency (I mode) and is lower for higher resonant frequency (II mode) in all the samples. 
+Damping ratio of CSPE composites increased with the increase in particle particle size and particle volume fractions. 
+The decrease in the resonant frequency and increase in the damping ratio with the increase in the particle particle size 
+may be due to the reduction in stiffness of the composite at higher particle particle size. The stiffness of CSPE 
+composites depends on the interfacial adhesive bonding area of particle particles, matrix-particle adhesion and particle 
+packing factor. These influencing parameters decrease with the increase in the particle size. 
+Table 2. Comparison of natural frequencies in first and second modes of vibration 
+Composite 
+designation
+fn (Exp)
+(Hz)
+fn (Theo)
+(Hz)
+fn (Num)
+(Hz)
+% Error b/w expt’al & 
+theoretical values
+1st
+ Mode 2nd Mode 1st
+ Mode 2nd Mode 1st
+ Mode 2nd Mode 1st
+ Mode 2nd Mode 
+ 
+A1 53.21 345.45 63.37 397.20 63.54 395.35 16.03 13.02 
+A2 51.32 --- 61.70 395.26 61.87 393.41 16.82 --- 
+A3 49.02 325.34 60.19 394.59 60.43 392.75 18.55 17.54 
+B1
+52.35 --- 59.25 371.37 59.32 369.65 11.64 --- 
+B2 49.53 315.35 57.73 361.85 57.80 360.17 14.20 12.85 
+B3 48.34 312.43 56.18 354.05 56.27 352.97 13.95 11.75 
+C1
+50.01 --- 57.14 358.17 57.21 356.50 12.47 --- 
+C2 48.31 324.56 56.83 356.21 56.89 354.55 14.91 8.89 
+C3 47.84 309.55 56.37 355.63 55.44 355.96 15.13 12.95 
+D1
+48.98 --- 56.74 355.58 56.78 354.03 13.67 --- 
+D2 47.96 323.32 55.01 354.80 55.14 353.20 12.81 8.87 
+D3 47.23 --- 54.32 351.17 54.39 349.54 13.05 --- 
+ Table 3. Damping ratios of different CSPE composite samples 
+Composite Designation Damping Ratio (ξ) 
+1st Mode 2nd Mode 
+A1 0.0204 0.0043 
+A2 0.029 --- 
+A3 0.035 0.0054 
+B1 0.021 --- 
+B2 0.033 0.0127 
+B3 0.037 0.0160 
+C1 0.046 --- 
+C2 0.0503 0.0046 
+C3 0.071 0.0097 
+D1 0.064 --- 
+D2 0.066 0.0062 
+D3 0.084 --- 
+ Typical frequency response curves for few of the CSPE composite samples (A1, A2, A3 and D3) obtained 
+experimentally by Fast Fourier Transform (FFT) using MAT LAB are shown in Figures 2 (a), 2 (b), 2(c) and 2(d) 
+respectively. The maximum value of natural frequency that occurs at 40% particle volume fraction and 0.25 mm 
+16204 Chary G.H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205
+particle particle size is 53.21 Hz at the first mode and 345.45 Hz at the second mode of vibration (Fig.2(a)). The 
+lowest value of natural frequency that occurs for 60% particle volume fraction and 2 mm particle particle size is 
+47.23 Hz at the first mode of vibration Fig.2 (d). Whereas the damping ratio of sample A1(40% particle volume 
+fraction and 0.25mm particle size) showed lowest value of 0.0204 and sample D3 (60% particle volume fraction and 
+2 mm particle size) revealed the highest value of 0.084 in first mode of vibration. The inverse relationship between 
+natural frequency and damping ratio of series A CSPE composite samples is presented in Figure 3. Similar trend 
+was observed for other series of CSPE composite samples. The CSPE composite possesses greater values of 
+damping ratios compared to Multiwall Carbon Nanotube reinforced aluminium-silicon alloy composites [7] and 
+almost comparable to Jute Nano Fibre Reinforced Composites [8]. 
+Fig. 2. Typical frequency response curves for different CSPE composite samples 
+Fig. 3. Variation of Natural frequency and Damping Ratio in series A CSPE composite samples 
+6. Conclusion 
+ The natural frequencies and damping ratios of CSPE composites for different particle sizes and particle volume 
+fractions were experimentally determined using LAB VIEW virtual instrumentation software. The experimental 
+ (a) Sample A1 (b) Sample A2
+ (c) Sample A3 (d) Sample D3
+1
+s t Mode
+Xmax= 30.32 µm
+fn= 53.21 Hz
+2
+nd Mode
+Xmax= 80 µm
+fn= 345.45 Hz
+1
+st Mode
+Xmax = 120µm
+fn= 51.32Hz
+1
+st Mode
+Xmax = 103.35 µm
+fn= 49.02 Hz
+2
+nd Mode
+Xmax= 33.54 µm
+fn= 325.34 Hz
+1
+st Mode
+Xmax = 12.43µm
+fn= 47.23 Hz
+a
+b
+c
+d
+ Chary G H and Ahmed / Materials Today: Proceedings 5 (2018) 16199–16205 16205
+results were compared with theoretical and numerical results and are found to be in good agreement. Both particle 
+volume fraction and particle particle size have considerable effect on the vibration parameters. CSPE Composites 
+with 0.25 mm particle size and 40% particle volume fraction( Sample A1) exhibited higher natural frequency and 
+lower damping ratio whereas the CSPE composite with 2 mm particle size and 60% particle volume fraction 
+(Sample D3) showed lower natural frequency and higher damping ratio. Based on the comparison of damping 
+factor made with other types of composites from literature, CSPE composite can be recommended as a suitable 
+damping material for applications in automobile sectors and interiors in aerospace applications. 
+References 
+[1] Mehmet. Damping and Vibration Analysis of Polyethylene Fiber Composite under Varied Temperature. 
+Turkish J. Eng.Env.Sci. 2006;30:351-357.
+[2] Satish N, Vijaya Kumar P V, Shivanand H K. Evaluation of Modal Damping in FRP Based Laminated 
+Composites through Modal Testing. Int. J. Eng. Sci. Innovative Tech. 2013; 2: 89-94. 
+[3] Ravi Sankar H, Vamsi Krishna P, Bhujanga Rao V and Bangaru Babu P. The effect of natural rubber particle 
+inclusions on the mechanical and damping properties of epoxy-filled glass fibre composites. Proc. IMechE
+Part L: J. Mater. Des. Appl. 2010; 224: 63 – 70. 
+[4] Dipa Ray. Modification of the Dynamic Damping Behavior of Fly Ash Filled Unsaturated Polyester Resin/SBR 
+Latex Blend Composites. J. Reinf. Plast. Compos. 2009; 28:1537 – 1552. 
+[5] Mohammed F. Aly, I. G. M. Goda, and Galal A. Hassan. Experimental Investigation of Dynamic 
+Characteristics of Laminated Composite Beams. Int. J. of Mech. Mechatronics IJMME-IJENS. 2010; 10:59 – 68. 
+[6] Mahmood M. Shokrieh and Ali Najafi. An Experimental Evaluation of Micromechanical Approaches for 
+Damping Characterization of Polymer Matrix Composites. J. Compos. Mater. 2008; 42: 2599 – 2613.
+[7] K. S. Umashankar , K. V. Gangadharan , Vijay Desai and B. Shivamurthy. Fabrication and Investigation of 
+Damping Properties of Nano Particulate Composites. J.Miner. Mater. Charact. Eng. 2010; 9: .819-830.
+[8] K.T.B Padal , K. Ramji and VVS Prasad. Damping Behavior of Jute Nano Fibre Reinforced Composites. 
+Int. J. Emerging Technol. Adv. Eng. 2014; 04: 753 -759.

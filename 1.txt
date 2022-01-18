@@ -1,0 +1,263 @@
+Mechanical Vibrations
+Procedia Engineering 144 ( 2016 ) 110 – 115 
+1877-7058 © 2016 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Peer-review under responsibility of the organizing committee of ICOVP 2015
+doi: 10.1016/j.proeng.2016.05.013 
+ScienceDirect
+Available online at www.sciencedirect.com
+12th International Conference on Vibration Problems, ICOVP 2015
+Experimental determination of structural damping of different 
+materials 
+Himanshu Mevadaa
+,Dipal Patelb
+a
+Department of Mechanical Engineering,cspit,India,388421
+b
+Department of Mechanical Engineering,cspit,India,388421 
+Abstract
+Estimating damping in structure composed of different materials (steel, brass, aluminum) and processes still remains as one of the 
+most extremely vast challengers. The paper presents Structural damping effect on beam vibration by impact hammer. Structural 
+damping contributes to about 10-15% of total system damping. The main objective of this work is to estimate the natural frequency 
+and damping ratio of cantilever beams of Aluminum, Brass, and Steel by LabVIEW software and validate the result with vibration 
+analysis and Harmonic analysis utilizing ANSYS. Free vibration analysis was carried out for identifying the natural frequencies
+and the harmonic analysis was carried out for obtaining frequency replication curves from which damping ratios were estimated 
+utilizing Half- power Band Width Method. It is observed that damping ratio is higher for brass than steel than aluminum. 
+© 2016 The Authors. Published by Elsevier Ltd. 
+Peer-review under responsibility of the organizing committee of ICOVP 2015. 
+Keywords: Structural Damping, LabVIEW, FFT, Half-Power Bandwidth Method, Harmonic analysis, Ansys 
+1. Introduction
+The concept of damping within a structural system can have different meanings to the various trade branches. Damping 
+is one of many different methods that have been proposed for allowing a structure to achieve optimal performance 
+when it is subjected to seismic, wind storm or other types of transient shock and vibration disturbances. [5] Vibration 
+is an element which is hard to avoid in practice. Excitation of resonant frequencies of some structural parts can occur 
+with existence of vibration even it is only a small insignificant vibration. The number of times that a complete motion 
+takes place during the period of one second is called frequency which is measured in Hertz (Hz).[10] Dynamic analysis 
+aims at understanding, evaluating and modifying the structural dynamic behaviour which involves many terms such 
+as natural frequencies, eigenvalues, eigenvectors, damping ratios, Frequency Response Functions (FRFs) etc. Modal 
+analysis is an effective means for identifying, accepting and simulating dynamic behaviour and responses of structural 
+elements. Modal analysis using ANSYS is an effective method of determining vibration characteristics [14]. Material 
+© 2016 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license 
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Peer-review under responsibility of the organizing committee of ICOVP 2015
+ Himanshu Mevada and Dipal Patel / Procedia Engineering 144 ( 2016 ) 110 – 115 111
+damping of cantilever beams attracts a lot of work even though extensive literature exists in the area of vibrations of
+beams. Material damping has not been paid much attention [14]. In this paper the cantilever beam structure, as shown 
+in Fig. 2, has been taken as a part because of its ease of practical ableness and also the ability to exemplify a variety 
+of mechanical products such as wing of an aircraft, rotor blade of a helicopter, blade of a ceiling fan, needle of a clock, 
+shelve of a civil structure, solar panel of a satellite etc. The dimensions of the cantilever beam structure are 370 x 25 
+x 10 mm, having a material of MS, Aluminium and Brass. The main aim of this project is to investigate highly damped 
+structural material out of various materials of structural beams from finding damping ratio by half-power bandwidth 
+method to reduce vibration level of the system for increase accuracy, safety and machine life.
+
+##stop##
+
+2. Damping
+Damping is the phenomenon by which mechanical energy is dissipated (usually converted into internal thermal 
+energy) in dynamic systems. A knowledge of the level of damping in a dynamic system is important in utilization, 
+analysis, and testing of the system. Damping is the energy dissipation of a material or system under cyclic stress. 
+Several types of damping are inherently present in a mechanical system.
+They are: 1. Internal (material) damping 2. Structural damping 3. . Fluid damping
+Internal (material) damping results from mechanical-energy dissipation within the material due to various 
+microscopic and macroscopic processes. Structural damping is caused by mechanical energy dissipation resulting 
+from relative motions between components in a mechanical structure that has common points of contact, joints, or 
+supports. Fluid damping arises from the mechanical energy dissipation resulting from drag forces and associated 
+dynamic interactions when a mechanical system or its components move in a fluid
+3. Measurement of damping
+Damping can be represented by various parameters (such as specific damping capacity, loss factor, Q-factor, and 
+damping ratio) and models (such as viscous, hysteretic, structural, and fluid). Before attempting to measure damping 
+in a system, one should decide on a representation (model) that will adequately characterize the nature of 
+mechanical-energy dissipation in the system. There are two general ways by which damping measurements can be 
+made: time-response methods and frequency-response methods. The basic difference between the two types of 
+measurements is that the first type uses a time-response record of the system to estimate damping, whereas the 
+second type uses a frequency-response record
+4. Half-power bandwidth method
+This method is also based in the magnitude curve of the frequency-response function. Bandwidth (Δω) is defined as 
+the width of the frequency response magnitude curve when the magnitude is ͳ
+ξʹ ൗ times the peak value. Then, 
+damping ratio can be determined from bandwidth using the expression
+Fig. 1. Half Power bandwidth method
+ൌ ߞ
+ͳ
+ʹ
+ȟ߱
+߱௥
+( 1) 
+112 Himanshu Mevada and Dipal Patel / Procedia Engineering 144 ( 2016 ) 110 – 115 
+5. Experimental setup of cantilever beam
+An experimental setup shown in fig. First a beam of various material is to be fix at one end. An Accelerometer has 
+been attached to the cantilever beam at free end to sense the acceleration data of vibration. Impact hammer is use to 
+disturb the frequency or to oscillate the beam. After impact the beam will be oscillate, so accelerometer sense data 
+and signal generated by DAQ device. LabVIEW software used to analysis the signals on laptop. 
+Fig. 2. Experimental setup of cantilever beam
+To calculate the natural frequency of the cantilever beam experimentally, experiment is conducted the with the 
+specified cantilever beam specimen to record the data of time history (Acceleration-Time), and FFT plot. The 
+natural frequencies of the system can be obtained directly by observing the FFT plot. The location of peak values 
+corresponds to the natural frequencies of the system. 
+Fig. 3. Typical FFT graph plot
+6. Result and discussion
+The Damping ratio is a parameter, usually denoted by ζ (zeta) provides a mathematical means of expressing the 
+level of damping in a system relative to critical damping. Damping of specimens made up of different materials 
+(brass, aluminium and mild steel) was calculated with the help of half power bandwidth method.
+ Himanshu Mevada and Dipal Patel / Procedia Engineering 144 ( 2016 ) 110 – 115 113
+ 
+Fig. 4. FFT plot from Experimental result and Harmonic analysis of MS material.
+ Fig. 5. FFT plot from Experimental result and Harmonic analysis of Aluminium material
+Fig. 6. FFT plot from Experimental result and Harmonic analysis of Brass material
+0.00E+00
+5.00E+03
+1.00E+04
+1.50E+04
+2.00E+04
+2.50E+04
+1
+10
+19
+28
+37
+46
+55
+64
+73
+82
+91
+100
+Amplitude [m/s²]
+0.00E+00
+1.00E+04
+2.00E+04
+3.00E+04
+4.00E+04
+5.00E+04
+1
+11
+21
+31
+41
+51
+61
+71
+81
+91
+Amplitude [m/s²]
+0.00E+00
+1.00E+03
+2.00E+03
+3.00E+03
+4.00E+03
+5.00E+03
+6.00E+03
+1
+11
+21
+31
+41
+51
+61
+71
+81
+91
+Amplitude [m/s²]
+114 Himanshu Mevada and Dipal Patel / Procedia Engineering 144 ( 2016 ) 110 – 115 
+Table 1.Comparision between three materials of Cantilever structural beams
+SR NO Material
+Damping ratio
+(Theoretical)
+Damping ratio
+(Experimental) % ERROR
+1 Mild steel 0.0077 0.0069 11
+2 Aluminium 0.0040 0.0035 14
+3 Brass 0.010 0.009 11
+ 
+Fig. 7. Comparison between three materials of Natural frequency and Damping ration of Cantilever Structural beams
+7. Conclusion
+The comparison concludes that the theoretical calculations based on the Harmonic Analysis with Ansys match with 
+experiments very well for the structural Beam with maximum errors of 14%.The Harmonic analysis has effective, 
+positive and helpful method for estimating of damping characteristic of structural beam. From the fig it concludes that 
+when Density of material increases, Damping Ratio also increases and Natural Frequency decreases of respective 
+material density. It also conclude that the Damping ratio of Brass material is higher than Aluminium. 
+In the future this experiment can be applied for Nano level as well as composite material.
+Acknowledgements
+The experimental work done in dynamics of machinery lab at CSPIT with the help of LabView software.
+Reference
+[1] D.P. Patil, S.K. Maiti, Experimental verification of a method of detection of multiple, Journal of Sound and Vibration 281 (2005) 439–
+451-Elsevier
+[2] Jin-Ting Wangn, Feng Jin, Chu-HanZhang, Estimation error of the half-power band width method in identifying damping for multiDOF systems, Soil DynamicsandEarthquakeEngineering39(2012)138–142-Elsevier
+[3] A.P. Parameswaran Active Vibration Control of a Smart Cantilever Beam on General Purpose Operating System, Defense Science 
+Journal, Vol. 63, No. 4, July 2013, pp. 413-417
+[4] George A.Papagiannopoulos, George D.Hatzigeorgiou, on the use of the half-power band width method to estimate damping in building 
+structures, Soil Dynamics and Earthquake Engineering 31(2011)1075–1079-Elsevier
+[5] Chandradeep Kumar Model Analysis and Harmonic Analysis of Cantilever Beam by ANSYS, GJRA - GLOBAL JOURNAL FOR 
+RESEARCH ANALYSIS, Volume-3, Issue-9, Sept-2014 • ISSN No 2277 – 8160
+[6] Mohd Atif Jamil Dynamic Analysis of Cantilever Beam using LabVIEW Proc. of Int. Conf. on Recent Trends in Mechanical, 
+Instrumentation and Thermal Engineering 2012
+Theoreti
+cal Ansys Experim
+ental
+MS 59.58 59.72 58.44
+ALUMINUM 59.79 59.93 59.12
+BRASS 39.43 39.54 38.4
+0
+10
+20
+30
+40
+50
+60
+70
+Natural Frequency
+MS ALUMI
+NUM BRASS
+Theoretical 0.0077 0.004 0.01
+Experimental 0.0069 0.0035 0.009
+0
+0.002
+0.004
+0.006
+0.008
+0.01
+0.012
+DAMPING RATIO
+ Himanshu Mevada and Dipal Patel / Procedia Engineering 144 ( 2016 ) 110 – 115 115
+[7] H.P. Yin,A new theoretical basis for the bandwidth method and optimal power ratios for the damping estimation, Mechanical Systems 
+and Signal Processing 22 (2008) 1869–1881-Elsevier
+[8] Dennis J.Tweten, Zach Ballard, Brian P.Mann, Minimizing error in the logarithmic decrement method through uncertainty propagation,
+Journal ofSoundandVibration333(2014)2804–2811-Elsevier
+[9] Nilson Barbieri , Paulo Rog erio Novak, Renato Barbieri, Experimental identification of damping, International Journal of Solids and 
+Structures 41 (2004) 3585–3594-Elsevier
+[10] Shankar Sehgal Structural dynamic analysis of cantilever beam structure, IJREAS Volume 2, Issue 2 (February 2012) ISSN: 2249-3905
+[11] D.P. Patil, S.K. Maiti, Experimental verification of a method of detection of multiple cracks in beams based on frequency measurements,
+Journal of Sound and Vibration 281 (2005) 439–451-Elsevier
+[12] Jaehun Ahn a, Giovanna Biscontin b, JoseM.Ro¨esset, Natural frequency and damping ratio of a vertically vibrated surface foundation,
+Soil Dynamics and Earthquake Engineering31(2011)674–681-Elsevier
+[13] Nathalie Labonnote1, Kjell Arne Malo, Damping measurements in timber beams using impact testing, Proceedings of the 8th 
+International Conference on Structural Dynamics, EURODYN 2011 Leuven, Belgium, G. De Roeck, G. Degrande, G. Lombaert, G. 
+M¨uller (eds.) ISBN 978-90-760-1931-4 
+[14] Syed Ayesha Dynamic characterstic estimation of structural materials by modal analysis using ansys, International Journal of Advance 
+Research In Science And Engineering, IJARSE, Vol. No.3, Issue No.7, July 2014,ISSN-2319-835
+[15] D. Ravi Prasad A study on dynamic characteristics of structural materials using modal analysis , Asian Journal of Civil Engineering, 
+Volume 9, Number 2, Pages 141-152, 2008.
+[16] Umashankar K. S., Abhinav Alva, Gangadharan K. V. and Vijay Desai, DAMPING BEHAVIOUR OF CAST AND SINTERED 
+ALUMINIUM, ARPN Journal of Engineering and Applied Sciences,VOL. 4, NO. 6, AUGUST 2009.ISSN 1819-6608
+[17] Giuseppe Catania, Silvio Sorrentino, Experimental evaluation of the damping properties of beams and thin-walled structures made of 
+polymeric materials, Proceedings of the IMAC-XXVII February 9-12, 2009 Orlando, Florida USA ©2009 Society for Experimental 
+Mechanics Inc
+[18] Andrzej Flaga, Jacek Szulej, Piotr Wielgos, Comparison of determination methods of vibration’s damping coefficients for complex 
+structures, Budownictwo i Architektura 3 (2008) 53-61
+[19] Mary Baker, Analysis methods to support design for damping, Springer-Engineering with Computers (2006)
+[20] Miroslav Jovanović, Aleksandar Simonović, Nebojša lukić,nemanja zorić,slobodan stupar,slobodan ilić, Experimental determination of 
+active structure damping ratio using different control strategies in system of active vibration control, 6th international scietific 
+conference on defensive technologies oteh 2014
+[21] Radu cruciat,cristian ghindea, Experimental determination of dynamic characteristics of structures, Mathematical Modelling in Civil 
+Engineering, no.4 – 2012
+[22] Jerzy FILIPIAK, Lech SOLARZ, Konrad ZUBKO, Analysis of damping effect on beam vibration, Molecular and Quantum Acoustics 
+vol. 27, (2006)
+[23] Rahul Sharma, Hartaj, Harinder Pal and S. R. Dutta, Vibration Control of Cantilever Beam Based on Eddy Current Damping, Pelagia 
+Research Library,Advances in Applied Science Research, 2011, 2 (6):429-438,ISSN: 0976-8610
+[24] Rajwinder Singh, Mohit Sharma, Dr. V P Singh, An Experimental Study of Vibration Control of Cantilever Beam Using Eddy Current 
+Damper, International Journal of Applied Engineering Research, ISSN 0973-4562 Vol.7 No.11 (2012)
+[25] F Orban, Damping of materials and members in structures, 5th International Workshop on Multi-Rate Processes and Hysteresis Journal 
+of Physics: Conference Series 268 (2011)
+[26] V. Arora, Structural damping identification method using normal FRFs, International Journal of Solids and Structures 51 (2014) 133–
+143-Elsevier
+[27] http://www.ni.com/data-acquisition/compactdaq/

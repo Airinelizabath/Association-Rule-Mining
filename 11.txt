@@ -1,0 +1,40 @@
+Association Mining
+
+Text Classification Using Association Rules,
+Dependency Pruning and Hyperonymization
+Yannis Haralambous and Philippe Lenca
+Institut Mines Telecom, Telecom Bretagne, UMR CNRS 6285 Lab-STICC
+Technopˆole Brest Iroise CS 83818, 29238 Brest Cedex 3, France
+<surname>.<name>@telecom-bretagne.eu
+Abstract. We present new methods for pruning and enhancing itemsets for text classification via association rule mining. Pruning methods
+are based on dependency syntax and enhancing methods are based on
+replacing words by their hyperonyms of various orders. We discuss the
+impact of these methods, compared to pruning based on tfidf rank of
+words.
+Introduction
+Automatic text classification is an important text mining task, due to the huge
+number of text documents that we have to manage daily. Text classification has
+a wide variety of applications such as Web document and email classification.
+Indeed, most of the Web news services daily provide a large number of articles
+making them impossible to be organized manually [14]. Automatic subject classification [9] and SPAM filtering [18] are two additional examples of the interest
+of automatic text classification.
+Automatic text classification can be defined as below. Given a set of documents such that each document is labeled with a class value, learn a model that
+assigns a document with unknown class to one or more particular classes. This
+can also be done by assigning a probability value to each class or by ranking the
+classes.
+A wide variety of classical machine learning techniques have been used for
+text classification. Indeed, texts may be represented by word frequencies vectors,
+and thus most of the quantitative data methods can be used directly on the
+notorious “bag-of-words” model (cf. [27,3]).
+Choosing a classifier is a multicriteria problem. In particular one has often
+to make a trade-o↵ between accuracy and comprehensibility. In this paper, we
+are interested in both criteria with a deeper interest in comprehensibility. We
+are thus interested in rule-based approaches and especially in class association
+rules algorithms. Several studies have already successfully considered association
+rule-based approaches in text mining (e.g., [4], [29], [7], [25]). This framework is
+suitable for considering some statistical characteristics (e.g., high-dimensionality,
+sparsity. . . ) of the bag-of-words model where a document is represented as a set
+of words with their associated frequency in the document.
+In: P. Cellier, T. Charnois, A. Hotho, S. Matwin, M.-F. Moens, Y. Toussaint (Eds.): Proceedings of
+DMNLP, Workshop at ECML/PKDD, Nancy, France, 2014.
+Copyright 

@@ -1,0 +1,216 @@
+Adversial Network
+
+arXiv:2104.00955v1 [cs.MM] 2 Apr 2021
+IEEE TRANSACTIONS ON MULTIMEDIA
+1
+An attention-based unsupervised adversarial model
+for movie review spam detection
+Yuan Gao, Maoguo Gong, Senior Member, IEEE, Yu Xie, and A. K. Qin, Senior Member, IEEE
+Abstract—With the prevalence of the Internet, online reviews
+have become a valuable information resource for people. How
+-
+ever, the authenticity of online reviews remains a concern, and
+deceptive reviews have become one of the most urgent network
+security problems to be solved. Review spams will mislead users
+into making suboptimal choices and inflict their trust in online
+reviews. Most existing research manually extracted features and
+labeled training samples, which are usually complicated and timeconsuming. This paper focuses primarily on a neglected emerging
+domain - movie review, and develops a novel unsupervised spa
+m
+detection model with an attention mechanism. By extracting the
+statistical features of reviews, it is revealed that users will express
+their sentiments on different aspects of movies in reviews. An
+attention mechanism is introduced in the review embedding, and
+the conditional generative adversarial network is exploited to
+learn users’ review style for different genres of movies. Th
+e
+proposed model is evaluated on movie reviews crawled from
+Douban, a Chinese online community where people could express
+their feelings about movies. The experimental results demonstrate
+the superior performance of the proposed approach.
+Index Terms—Movie reviews, Spam detection, Attention mechanism, Generative adversarial networks (GANs).
+I. INTRODUCTION
+WITH the emerging and developing of Web 2.0 that
+emphasizes the participation of users, consumers increasingly depend on user-generated online reviews to make
+purchase or investment decisions [1] [2] [3]. Online review
+s
+enable consumers to post reviews describing their experiences
+with products and improve the ability of users to evaluate
+unobservable product quality. However, these growing text
+information is also full of various uncontrollable risk factors
+that needs to be seriously treated and managed by websites
+and platforms. A significant impediment to the usefulness of
+reviews is the existence of review spam, which is designed to
+give an unfair view of products and influence users’ perception
+of them by inflating or damaging their reputation [4] [5]. Bot
+h
+over-rating and under-rating affect the sales performance of
+products, and it is thus an important task to detect review
+spam to protect the genuine interests of consumers and product
+vendors.
+In the past few years, there has been a growing interest in
+review spam detection from both academia and industry [6]
+[7]. A preliminary investigation is given in [8], where thre
+e
+Y. Gao, M. Gong and Y. Xie are with the School of Electronic Engineering,
+Key Laboratory of Intelligent Perception and Image Understanding of Ministry
+of Education, Xidian University, Xi’an, Shanxi Province 710071, China. (email: cn gaoyuan@foxmail.com; gong@ieee.org; sxlljcxy@gmail.com)
+A. K. Qin is with the department of Computer Science and Software
+Engineering, Swinburne University of Technology, Melbourne, Australia. (email: kqin@swin.edu.au)
+types of review spam are identified, including untruthful re
+-
+views (reviews that maliciously promote or defame products),
+reviews on brands but not products, and non-reviews (e.g.
+advertisements). Since they have no manually labeled training
+instances, untruthful review detection is performed by using
+duplicate reviews as labeled deceptive data, and a regression
+model is built on these samples. Most subsequent methods uti
+-
+lize supervised or semi-supervised models under its influence
+by manually identifying review spam and extracting feature
+s
+[9] [10] [11]. However, it is incredibly time-consuming and
+impractical for service providers to label previous spammers,
+because a spammer will carefully craft a review that is just
+like other innocent reviews [12], and even a small number
+of incorrect annotations may bring poor results of the model
+.
+Moreover, feature identification and construction is also tricky
+and complicated. Therefore, it is necessary to propose an
+unsupervised way for review spam detection.
+Most existing works on review spam detection focus on
+product reviews. Compared with online product review platforms, online movie review platforms appear later and thus
+receive little attention. This paper focuses primarily on movie
+review spam detection. Top reviews and online word-of-mout
+h
+have a significant impact on the box office performance of
+movies [13] [14], while the censorship is not strict and anyone
+can post reviews and express their sentiments online. Under
+the substantial commercial interest, more and more review
+spammers make deceptive critics to increase the evaluation
+of the target movie deliberately and discredit the competition movies arbitrarily, which will mislead users who plan
+to watch movies and attract publishers to put funds into
+review manipulation rather than filmmaking. For these reasons,
+detecting movie review spams is essential and urgent for the
+movie industry. Different from product reviews, movie reviews
+have the following characteristic. Due to the subjectivity of
+movie reviews, it is a challenging task to label them manuall
+y
+and therefore supervised methods are no longer applicable.
+Furthermore, carefully crafted deceptive reviews usually look
+perfectly normal, thus the artificially extracted features, such
+as text similarity or length of review, are ineffective. Besides,
+movie reviews usually entail unique movie plots or actors,
+which increase the burden of spam detection. As a result, spa
+m
+detection of movie reviews is more challenging than that of
+product reviews.
+To address the aforementioned challenges, the paper proposes a novel movie review spam detection method using
+an attention-based unsupervised model with conditional generative adversarial networks. Unlike the previous approaches
+for review spam detection, the presented user-centric mode
+l
+IEEE TRANSACTIONS ON MULTIMEDIA 2
+can achieve outstanding performance under the circumstance
+of movie reviews. The characteristics of movie reviews are
+discussed in depth, which naturally raise several assumptions
+about deceptive reviews. Meanwhile, it is verified that the
+user’s attention (e.g. plot, actors, visual effects) are always
+distinct for different genres of movies. During the process
+of mapping reviews into low-dimensional dense vectors, the
+weights of feature words will increase, and what users are
+interested in about a movie can be captured. Afterward,
+the attention-driven conditional generative adversarial network
+(adCGAN) is utilized to identify the specific condition-sample
+pairs with movie elements (e.g. score, genres, region) being
+conditions and review vectors being samples. Particularly, the
+generator aims to misjudge the discriminator and generate
+vectors that have similar distributions as real reviews with
+certain conditions. The discriminator judges whether moviereview pairs are real, where conditions have been resampled,
+thus correlations are extracted and deceptive reviews will
+be identified. To the best of our knowledge, this paper is
+the first to explore the potential of GANs for review spam
+detection. Specifically, the main contributions of this paper
+are as follows:
+• The paper investigates the characteristics of movie review
+spams and the differences between product and movie
+review spams, then several novel techniques for deceptive
+review detection are presented. Compared with traditional review spam detection algorithms, the approach
+can effectively detect deceptive opinion spam under the
+circumstance of movie reviews.
+• The paper introduces an attention mechanism and a
+user-centric model, which is preferred over the reviewcentric one as gathering behavioral evidence of users is
+more effective than features of deceptive reviews. The
+weights of words change adaptively according to users’
+attention towards different aspects of movies in sentence
+embedding, thus user preferences can be extracted and
+encoded into the vector representations of reviews.
+• It alleviates the problem of lacking labeled deceptive
+reviews by introducing unmatched movie-review pairs as
+fake samples, so that the conditional generative adversarial network is able to learn user’s language style from
+previous reviews and under what conditions will users
+write certain reviews.
+• The paper explores several ways to identify spammed
+movies and reviews, and our method is evaluated on
+movie reviews crawled from Douban 1
+, the most authoritative online movie rating and review website in China.
+Experimental results demonstrate that the proposed algorithm outperforms other anomaly detection baselines.
+The remainder of this paper is organized as follows. Section II briefly presents the related backgrounds and algorithms
+about review spam detection, word embedding and generative adversarial networks. In Section III, clear and objective
+definitions of the review spam and the problem of review
+spam detection are given, then the details of the approach are
+described. Section IV shows several ways to artificially detect
+1https://movie.douban.com
+deceptive reviews, as well as extensive experiments to validate
+the effectiveness. Finally, we conclude with a discussion of
+the proposed framework and summarize the future work in
+Section V.
+II. RELATED WORK
+Recently, online review spam detection has been a popular
+research topic [15] [16] [17]. Most existing review spam detection techniques are supervised or semi-supervised methods
+with pre-defined features. As mentioned earlier, Jindal et al.
+[8] identified three types of spam and applied logistic regression on manually labeled training examples. In particular,
+they manually selected 35 features, including price and sales
+rank of the product, percent of positive and negative words
+in reviews, and the length of review titles, etc. Lim et al.
+[18] investigated several characteristic behaviors of review
+spammers and modeled these behaviors for spam detection.
+They also proposed a scoring method to measure the degree
+of spam for reviewers and applied it on Amazon. Rayana et
+al. [19] proposed a holistic approach that utilized clues from
+metadata (text, timestamp, rating) and relational data, then harnessed them collectively to spot suspicious users and reviews.
+Yang et al. [20] presented a three-phase method to address
+the problem of identifying spammer groups and individual
+spammers. They utilized duplicate and near duplicate reviews
+detection, reviewers interest similarity and individual spammer
+behavior in spammer detection. Generally, the selected features
+of models gradually changed from shallow (the length of
+reviews) to deep (users’ interests) with the development of
+deep learning techniques.
+Word embedding, which is a distributed representation
+method, is widely used in various natural language processing
+(NLP) tasks, such as opinion analysis [21] [22] and sentiment
+classification [23] [24]. Word embedding methods represent
+words as continuous dense vectors in a low-dimensional
+space, which capture lexical and semantic properties of words.
+Mikolov et al. [25] proposed SkipGram, in which vectors are
+obtained from the internal representations from neural network
+models of text. It optimizes a neighborhood preserving likelihood objective using stochastic gradient descent with negative
+sampling. To be specific, given a sequence of training words
+s = (w1, w2, ..., w|s|), the SkipGram model seeks to maximize
+the average log-probability of observing the context of a word
+wi conditioned on its representation Φ(w). The Φ(w) is a
+mapping function that maps a word to low-dimensional dense
+vector, and its value is the weight from the input layer to the
+hidden layer of the neural network. The number of neurons in
+the input layer corresponds to the size of the vocabulary, and
+that in the hidden layer is the embedding dimension.
+max
+Φ
+1
+|s|
+X
+|s|
+i=1
+X
+−c≤j≤c,j6=0
+logP r
